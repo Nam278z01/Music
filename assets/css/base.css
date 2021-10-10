@@ -1,0 +1,112 @@
+:root {
+    --bg-color: #181818;
+    --main-color: #00e1cb;
+    --text-color: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 24px;
+    background-color: transparent;
+    color: var(--text-color);
+    transition: background-color linear 0.35s;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.btn.btn-outline {
+    border: 1px solid var(--text-color);
+}
+
+.btn + .btn {
+    margin-left: 16px;
+}
+
+.btn i {
+    font-size: 2.4rem;
+}
+
+.btn span {
+    display: inline-block;
+    font-size: 1.6rem;
+    padding-left: 8px;
+}
+
+.btn.btn--circle {
+    padding: 0;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+}
+
+.btn.btn--half-circle {
+    border-radius: 2rem;
+}
+
+.btn.btn--primary {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.btn.btn--primary:hover {
+    color: var(--text-color);
+    background-color: var(--main-color);
+}
+
+.ratio16-9 {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.ratioIn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
