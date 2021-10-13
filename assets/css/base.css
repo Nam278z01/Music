@@ -19,7 +19,6 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    overflow-x: hidden;
 }
 
 a {
@@ -78,10 +77,6 @@ img {
     height: 42px;
     width: 42px;
     border-radius: 50%;
-}
-
-.btn.btn--half-circle {
-    border-radius: 2rem;
 }
 
 .btn.btn--primary {
