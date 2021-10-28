@@ -16,6 +16,14 @@
     margin-right: -4px;
 }
 
+.row.nowrap {
+    flex-wrap: nowrap;
+}
+
+.row.nowrap .col {
+    flex-shrink: 0;
+}
+
 .row.no-gutters {
     margin-left: 0;
     margin-right: 0;
@@ -283,8 +291,8 @@
     }
 
     .row.sm-gutter {
-        margin-left: -5px;
-        margin-right: -5px;
+        margin-left: -8px;
+        margin-right: -8px;
     }
 
     .col {
@@ -293,8 +301,8 @@
     }
 
     .row.sm-gutter .col {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .l-0 {
