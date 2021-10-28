@@ -1,0 +1,29 @@
+.home-main {
+    margin: 0 320px 0 200px;
+    padding: 24px 0 0;
+}
+
+.list-playlist__header {
+    padding: 32px 32px 0;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-playlist__name {
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.list-playlist__btn {
+
+}
+
+.list-playlist__btn-prev {
+
+}
+
+.list-playlist__btn-next {
+
+}

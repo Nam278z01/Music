@@ -1,7 +1,6 @@
 :root {
-    --bg-color: #181818;
-    --main-color: #00e1cb;
-    --text-color: #ffffff;
+    --bg-color: #ffffff;
+    --text-color: rgba(28, 30, 32, 0.88);
 }
 
 * {
@@ -16,7 +15,7 @@ html {
 
 body {
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -43,23 +42,13 @@ img {
     text-decoration: none;
     border: none;
     cursor: pointer;
-    padding: 8px 24px;
     background-color: transparent;
     color: var(--text-color);
     transition: background-color linear 0.35s;
 }
 
-.btn:hover {
-    background-color: var(--main-color);
-    color: var(--text-color);
-}
-
 .btn.btn-outline {
     border: 1px solid var(--text-color);
-}
-
-.btn + .btn {
-    margin-left: 16px;
 }
 
 .btn i {
@@ -77,16 +66,6 @@ img {
     height: 42px;
     width: 42px;
     border-radius: 50%;
-}
-
-.btn.btn--primary {
-    color: var(--main-color);
-    border-color: var(--main-color);
-}
-
-.btn.btn--primary:hover {
-    color: var(--text-color);
-    background-color: var(--main-color);
 }
 
 .ratio16-9 {
