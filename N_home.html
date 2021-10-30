@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music - Nghe nhạc mới, tải nhạc hot chất lượng cao</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/css/playmusic.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+</head>
+<body>
+    <div class="app">
+        <nav class="sidebar">
+            <div class="sidebar__header">
+                <div class="sidebar__brand-name">
+                    MM
+                </div>
+                <a class="sidebar__upgrade btn btn--primary btn-outline" href="">
+                    Nâng cấp
+                </a>
+            </div>
+            <div class="sidebar__userAset">
+                <a href="" class="sidebar__user">
+                    <div class="sidebar__user-avatar">
+                        <img src="./assets/img/1560232125002.jpg" alt="">
+                    </div>
+                    <div class="sidebar__user-name">
+                        <span title="Unknown">Unknown</span>
+                        <span>VIP</span>
+                    </div>
+                </a>
+                <button class="btn sidebar__btn-setting">
+                    <i class='bx bx-cog'></i>
+                </button>
+            </div>
+            <div class="sidebar__navigation">
+                <ul class="sidebar__navigation-listitem">
+                    <li class="sidebar__navigation-item">
+                        <a href="" class="sidebar__navigation-link">
+                            <i class='bx bx-search'></i>
+                            <span>Tìm kiếm</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__navigation-item">
+                        <a href="" class="sidebar__navigation-link active">
+                            <i class='bx bxs-home'></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__navigation-item">
+                        <div class="sidebar__navigation-link">
+                            <i class='bx bxs-compass'></i>
+                            <span>Khám phá</span>
+                            <i class='bx bx-chevron-up'></i>
+                        </div>
+                        <div class="sidebar__navigation-listsubitem">
+                            <div class="sidebar__navigation-subitem">
+                                <a href="" class="sidebar__navigation-sublink">
+                                    <span>Bài hát</span>
+                                </a>
+                            </div>
+                            <div class="sidebar__navigation-subitem">
+                                <a href="" class="sidebar__navigation-sublink">
+                                    <span>Playlist</span>
+                                </a>
+                            </div>
+                            <div class="sidebar__navigation-subitem">
+                                <a href="" class="sidebar__navigation-sublink">
+                                    <span>Album</span>
+                                </a>
+                            </div>
+                            <div class="sidebar__navigation-subitem">
+                                <a href="" class="sidebar__navigation-sublink">
+                                    <span>Nghệ sĩ</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sidebar__navigation-item">
+                        <div class="sidebar__navigation-link">
+                            <i class='bx bxs-music'></i>
+                            <span>Nghe gì hôm nay</span>
+                            <i class='bx bx-chevron-up'></i>
+                        </div>
+                        <div class="sidebar__navigation-listsubitem">
+                            <div class="sidebar__navigation-subitem">
+                                <a href="" class="sidebar__navigation-sublink">
+                                    <span>Tuyển tập</span>
+                                </a>
+                            </div>
+                            <div class="sidebar__navigation-subitem">
+                                <a href="" class="sidebar__navigation-sublink">
+                                    <span>Top 100</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sidebar__navigation-item">
+                        <a href="" class="sidebar__navigation-link">
+                            <i class='bx bx-bar-chart'></i>
+                            <span>BXH MM</span>
+                        </a>
+                    </li>
+                    <div class="sidebar__navigation-library">THƯ VIỆN</div>
+                    <li class="sidebar__navigation-item">
+                        <a href="" class="sidebar__navigation-link">
+                            <i class='bx bx-cloud'></i>
+                            <span>My Music</span>
+                        </a>
+                    </li>
+                     <li class="sidebar__navigation-item">
+                        <a href="" class="sidebar__navigation-link">
+                            <i class='bx bx-heart'></i>
+                            <span>Đã thích</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__navigation-item">
+                        <a href="" class="sidebar__navigation-link">
+                            <i class='bx bx-history'></i>
+                            <span>Lịch sử</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="home-main">
+            <div class="home-main__slide">
+                <div class="home-main__slide-list">
+                    <div class="home-main__slide-item">
+                        <div class="ratio10-4">
+                            <div class="ratioIn">
+                                <img src="./assets/img/1635475393032.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-main__slide-item">
+                        <div class="ratio10-4">
+                            <div class="ratioIn">
+                                <img src="./assets/img/1635304895017.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-main__slide-item">
+                        <div class="ratio10-4">
+                            <div class="ratioIn">
+                                <img src="./assets/img/1635317195702.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-main__slide-pick">
+                    <div class="home-main__slide-pick-item picked"></div>
+                    <div class="home-main__slide-pick-item"></div>
+                    <div class="home-main__slide-pick-item"></div>
+                </div>
+            </div>
+            
+
+
+            <div class="list-playlist" id="slide-one">
+                <div class="list-playlist__header">
+                    <h3 class="list-playlist__name">
+                        Xu hướng hôm nay
+                    </h3>
+                    <div class="list-playlist__btn">
+                        <button class="btn list-playlist__btn-prev disabled">
+                            <i class='bx bx-left-arrow-alt'></i>
+                        </button>
+                        <button class="btn list-playlist__btn-next">
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="list-playlist__slide">
+                    <div class="grid">
+                        <div class="row sm-gutter nowrap">
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1631509112943_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1631509319362_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-playlist" id="slide-second">
+                <div class="list-playlist__header">
+                    <h3 class="list-playlist__name">
+                        Góc nhạc quốc tế
+                    </h3>
+                    <div class="list-playlist__btn">
+                        <button class="btn list-playlist__btn-prev disabled">
+                            <i class='bx bx-left-arrow-alt'></i>
+                        </button>
+                        <button class="btn list-playlist__btn-next">
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="list-playlist__slide">
+                    <div class="grid">
+                        <div class="row sm-gutter nowrap">
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1631509112943_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1631509319362_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1631509112943_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-playlist" id="slide-third">
+                <div class="list-playlist__header">
+                    <h3 class="list-playlist__name">
+                        Thiên hạ nghe gì
+                    </h3>
+                    <div class="list-playlist__btn">
+                        <button class="btn list-playlist__btn-prev disabled">
+                            <i class='bx bx-left-arrow-alt'></i>
+                        </button>
+                        <button class="btn list-playlist__btn-next">
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="list-playlist__slide">
+                    <div class="grid">
+                        <div class="row sm-gutter nowrap">
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1631509112943_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1631509319362_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1635399302001_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3">
+                                <div class="list-playlist__item">
+                                    <div class="ratio1-1">
+                                        <div class="ratioIn overflow-hd">
+                                            <img src="./assets/img/1631509112943_300.jpg" alt="Hit-Maker Việt">
+                                        </div>
+                                        <div class="ratioIn list-playlist__item-feature">
+                                            <button class="btn btn-like btn--circle" title="Yêu thích">
+                                                <i class='bx bx-heart'></i>
+                                            </button>
+                                            <div class="list-playlist__item-play">
+                                                <button class="btn btn-outline btn--circle btn-listen" title="nghe">
+                                                    <i class='bx bxs-right-arrow'></i>
+                                                </button>
+                                            </div>
+                                            <button class="btn btn--more btn--circle" title="Khác">
+                                                <i class='bx bx-dots-vertical-rounded'></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="list-playlist__item-name" title="Hit-Maker Việt">
+                                        <a href="#">Hit-Maker Việt</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="play-music">
+            <div class="play-music__header">
+                <img src="./assets/img/default_player3.jpg" alt="">
+                <p>Thưởng thức những giai điệu theo cách riêng của bạn</p>
+                <button class="btn play-music__btn-listen btn--primary btn-outline">
+                    Nghe nào
+                </button>
+            </div>
+            <div class="playmusic__main">
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/js/sidebar.js"></script>
+    <script src="./assets/js/home.js"></script>
+</body>
+</html>
