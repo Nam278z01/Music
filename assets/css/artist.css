@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    background-color: #fafafa;
+    font-family:inherit;
+}
+/* main contain */
+.main_contain{
+    width: 100%;
+    min-height: 720px;
+    margin: 1px 0px 0px 0px;
+    display: flex;
+}
+.sub_contain_one{
+    flex: 0.8;
+
+}
+.sub_contain_two{
+    flex: 0.8;
+}
+.submain_contain{
+    flex: 4;
+    min-height: 720px;
+    border-left: 1px solid #b7babd;
+    border-right: 1px solid #b7babd;
+}
+
+/* header */
+.nav{
+    min-height: 82px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content:center;
+    border-bottom: 1px solid #b7babd;
+}
+.nav-list{
+    margin: 16px 21px;
+    min-height: 48px;
+}
+.nav-item:hover{
+    border-bottom: 2px solid #69aaeb ;
+    animation: navi ease-in 0.2s;
+}
+@keyframes navi{
+    from{
+        border-bottom: 1px solid #bad4ee ;
+    }
+    to{
+
+    }
+}
+.nav-item:first-child{
+    border-bottom: 2px solid #69aaeb !important;
+}
+
+.nav-item{
+    color: aliceblue;
+    min-width: 120px;
+    text-align: center;
+    list-style: none;
+    margin: 0 12px;
+    display: inline-block;
+    line-height: 48px;
+}
+.nav-item a{
+  
+    color: #1c1e20;
+    text-decoration: none;
+}
+/* content */
+.Content{
+    min-width: 720px;
+    margin: 0 auto 0 auto;
+    padding: 24px;
+    border-bottom: 1px solid #b7babd;
+
+}
+/* thẻ h */
+.content-h{
+    margin: 0px auto 20px auto;
+}
+.content-h h5{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgba(28, 30, 32, 0.88);
+
+}
+/* item */
+.list-playlist__item{
+    
+
+}
+.ratio1-1{
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+.ratioIn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #b7babd;
+    border-radius: 10px;
+    display: flex;
+}
+
+.list-playlist__item img{
+    margin: auto;
+    width: 99%;
+    height: 99%;
+    border: 1px solid #b7babd;
+    border-radius: 10px;
+    transition: all 1s;
+
+}
+.list-playlist__item:hover img{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.list-playlist__item-name{
+    margin: 10px 0px;
+}
+.list-playlist__item-name a{
+    padding: 10px 0px;
+    color: #1c1e20;
+    font-weight: 500;
+    text-decoration: none;
+}
+.list-playlist__item-name a:hover{
+    color: #167be0;
+}
+.artist{
+    margin: 10px 0px;
+}
+.artist a{
+    opacity: 0.5;
+    text-decoration: none;
+    color: #1c1e20;
+}
+.artist a:hover{
+    opacity: 1;
+    color: #167be0;
+}
+
+/* wrap-layout */
+.wrap-layout{
+
+    margin-top: 36px;
+    padding: 12px 0 32px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* number */
+.number{
+    margin: auto;
+    display: block;
+    border: 1px solid #b7babd;
+    border-radius: 24px;
+}
+.number li{
+    width: 42px;
+    height: 42px;
+    
+    border-right: 1px solid #b7babd;
+    list-style: none;
+    float: left;
+    line-height: 42px;
+    text-align: center;
+}
+.number li:hover a{
+    color: #69aaeb;
+    border-bottom: 1px solid #69aaeb;
+
+}
+.number li:last-child{
+    border-right: none !important;
+}
+.number li:nth-child(2) a{
+    border-bottom: 1px solid #69aaeb;
+}
+.number li:last-child:hover a,
+.number li:first-child a
+{
+
+    border-bottom:none !important;
+}
+.number li a{
+    text-align: center;
+    text-decoration: none;
+    color: #b7babd;
+    padding:6px;
+    
+}
+/* footer */
+.footer{
+    min-height: 100px;
+    width: 100%;
+    padding: 0 30px 0 30px;
+}
+.link{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #b7babd;
+    display: flex;
+    justify-content: space-between;
+}
+.service{
+    min-width: 200px;
+    display: flex;
+}
+.nav_service{
+    margin: auto;
+}
+.nav_service li{
+    display: block;
+    float: left;
+    padding: 0 10px 0 10px;
+    border-right: 1px solid #bad4ee;
+}
+.nav_service li:last-child{
+    border-right:none !important;
+}
+.nav_service li a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #b7babd;
+}
+.nav_service li:hover a,
+.nav_service li:hover i{
+    color: #69aaeb;
+}
+
+.link .service:nth-child(2) .nav_service li{
+    border: none ;
+}
+.infor{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.infor p{
+    color: #69aaeb;
+    font-family: 'Zen Old Mincho', serif;
+    margin: auto;
+}
