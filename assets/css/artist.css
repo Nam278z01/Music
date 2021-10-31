@@ -9,24 +9,12 @@ html{
     font-family:inherit;
 }
 /* main contain */
-.main_contain{
-    width: 100%;
-    min-height: 720px;
-    margin: 1px 0px 0px 0px;
-    display: flex;
-}
-.sub_contain_one{
-    flex: 0.8;
-
-}
-.sub_contain_two{
-    flex: 0.8;
-}
 .submain_contain{
-    flex: 4;
-    min-height: 720px;
+    /* min-height: 720px;
     border-left: 1px solid #b7babd;
-    border-right: 1px solid #b7babd;
+    border-right: 1px solid #b7babd; */
+    margin: 0 320px 0 200px;
+    /* padding: 24px 0 0; */
 }
 
 /* header */
@@ -42,7 +30,10 @@ html{
     min-height: 48px;
 }
 .nav-item:hover{
-    border-bottom: 2px solid #69aaeb ;
+    border: 1px solid #b7babd;
+    border-radius: 10px;
+    display: flex;
+    border-bottom: 2px solid var(--main-color) ;
     animation: navi ease-in 0.2s;
 }
 @keyframes navi{
@@ -54,7 +45,7 @@ html{
     }
 }
 .nav-item:first-child{
-    border-bottom: 2px solid #69aaeb !important;
+    border-bottom: 2px solid var(--main-color) !important;
 }
 
 .nav-item{
@@ -70,6 +61,7 @@ html{
   
     color: #1c1e20;
     text-decoration: none;
+    font-size: 1.3rem;
 }
 /* content */
 .Content{
@@ -94,7 +86,7 @@ html{
     
 
 }
-.ratio1-1{
+/* .ratio1-1{
   width: 100%;
   padding-top: 100%;
   position: relative;
@@ -108,7 +100,7 @@ html{
     border: 1px solid #b7babd;
     border-radius: 10px;
     display: flex;
-}
+} */
 
 .list-playlist__item img{
     margin: auto;
@@ -176,15 +168,15 @@ html{
     text-align: center;
 }
 .number li:hover a{
-    color: #69aaeb;
-    border-bottom: 1px solid #69aaeb;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
 
 }
 .number li:last-child{
     border-right: none !important;
 }
 .number li:nth-child(2) a{
-    border-bottom: 1px solid #69aaeb;
+    border-bottom: 1px solid var(--main-color);
 }
 .number li:last-child:hover a,
 .number li:first-child a
@@ -196,8 +188,6 @@ html{
     text-align: center;
     text-decoration: none;
     color: #b7babd;
-    padding:6px;
-    
 }
 /* footer */
 .footer{
@@ -236,7 +226,10 @@ html{
 }
 .nav_service li:hover a,
 .nav_service li:hover i{
-    color: #69aaeb;
+    color: var(--main-color);
+}
+.nav_service li i{
+    font-size: 24px;
 }
 
 .link .service:nth-child(2) .nav_service li{
@@ -248,7 +241,7 @@ html{
     display: flex;
 }
 .infor p{
-    color: #69aaeb;
+    color: var(--main-color);
     font-family: 'Zen Old Mincho', serif;
     margin: auto;
 }
