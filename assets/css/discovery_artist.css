@@ -54,6 +54,7 @@
 }
 /* content */
 .content {
+    border-bottom: 1px solid var(--bg-color-blur3);
 
 }
 
@@ -113,6 +114,9 @@
 
 .number li a.active {
     color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+.number li:hover a{
     border-bottom: 1px solid var(--main-color);
 }
 
@@ -185,4 +189,5 @@
     color: var(--main-color);
     font-family: 'Zen Old Mincho', serif;
     margin: auto;
+    font-size: 1.4em;
 }
