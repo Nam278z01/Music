@@ -60,7 +60,7 @@ const app = {
                             this.currentIdx = 1
                         }
                         _this.moveSlide(_this.currentIdx + 1)
-                    }, 5000)
+                    }, 3000)
                 }
             })
         })
