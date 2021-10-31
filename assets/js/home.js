@@ -1,3 +1,10 @@
+let imgArtist = $$('.released__artist-img')
+let countArtist = imgArtist.length
+imgArtist.forEach(item => {
+    item.style.zIndex = `${countArtist}`
+    countArtist--
+})
+
 let slideContain = $('.home-main__slide')
 let slide = slideContain.querySelector('.home-main__slide-list')
 let slideItem = slide.querySelectorAll('.home-main__slide-item')
@@ -34,7 +41,7 @@ const app = {
                 this.currentIdx = 1
             }
             _this.moveSlide(_this.currentIdx + 1)
-        }, 5000)
+        }, 3000)
 
         // Dừng slide khi mouseover lên toàn bộ silde
         'mouseover touchstart'.split(' ').forEach(ele => {

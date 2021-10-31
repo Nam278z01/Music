@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--bg-color);
+    background-color: var(--white-color);
 }
 
 .play-music__header {
@@ -23,6 +23,7 @@
     width: 240px;
     height: 240px;
     border-radius: 4px;
+    object-fit: cover;
 }
 
 .play-music__header p {

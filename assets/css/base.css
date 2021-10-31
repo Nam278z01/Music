@@ -1,16 +1,19 @@
 :root {
     --bg-color: #f5f5f5;
+    --bg-color2: #f0f0f0;
+    --white-color: #ffffff;
     --bg-color-blur: rgba(28, 30, 32, 0.02);
     --bg-color-blur2: rgba(28, 30, 32, 0.05);
     --bg-color-blur3: rgba(28, 30, 32, 0.15);
     --text-color: rgba(28, 30, 32, 0.88);
     --text-color-blur: rgba(28, 30, 32, 0.5);
     --main-color: #2daaed;
-    --shadow-color: rgba(0, 0, 0, 0.4);
+    --shadow-color: rgba(0, 0, 0, 0.5);
     --scroll-color: #cecece;
-    --border-color: #eeeeee;
+    --border-color: rgba(28, 30, 32, 0.05);
     --border-color-blur: rgba(28, 30, 32, 0.2);
     --white-color-blur : rgba(255, 255, 255, 0.4);
+    --song-hover-color: #eaeaea;
 }
 
 * {
@@ -69,7 +72,6 @@ img {
     color: var(--text-color);
     transition: background-color linear 0.35s;
     padding: 8px 16px;
-    text-transform: capitalize;
 }
 
 .btn.btn--primary {
