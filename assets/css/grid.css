@@ -445,6 +445,158 @@
     }
 }
 
+/* PC high resolution > */
+@media (min-width: 1800px) {
+    .row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+    .row.sm-gutter {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .col {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .row.sm-gutter .col {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .sl-0 {
+        display: none;
+    }
+
+    .sl-1,
+    .sl-2,
+    .sl-2-4,
+    .sl-3,
+    .sl-4,
+    .sl-5,
+    .sl-6,
+    .sl-7,
+    .sl-8,
+    .sl-9,
+    .sl-10,
+    .sl-11,
+    .sl-12 {
+        display: block;
+    }
+
+    .sl-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .sl-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .sl-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    .sl-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .sl-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .sl-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .sl-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .sl-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .sl-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .sl-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .sl-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .sl-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .sl-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .sl-o-1 {
+        margin-left: 8.33333%;
+    }
+
+    .sl-o-2 {
+        margin-left: 16.66667%;
+    }
+
+    .sl-o-3 {
+        margin-left: 25%;
+    }
+
+    .sl-o-4 {
+        margin-left: 33.33333%;
+    }
+
+    .sl-o-5 {
+        margin-left: 41.66667%;
+    }
+
+    .sl-o-6 {
+        margin-left: 50%;
+    }
+
+    .sl-o-7 {
+        margin-left: 58.33333%;
+    }
+
+    .sl-o-8 {
+        margin-left: 66.66667%;
+    }
+
+    .sl-o-9 {
+        margin-left: 75%;
+    }
+
+    .sl-o-10 {
+        margin-left: 83.33333%;
+    }
+
+    .sl-o-11 {
+        margin-left: 91.66667%;
+    }
+}
+
 /* > PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
     .wide {
