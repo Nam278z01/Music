@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #ffffff;
+    --bg-color: #f5f5f5;
     --bg-color-blur: rgba(28, 30, 32, 0.02);
     --bg-color-blur2: rgba(28, 30, 32, 0.05);
     --bg-color-blur3: rgba(28, 30, 32, 0.15);
@@ -29,6 +29,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-weight: 500;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {

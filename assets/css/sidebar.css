@@ -8,6 +8,7 @@
     border: 1px solid var(--border-color);
     overflow-y: scroll;
     user-select: none;
+    background-color: var(--bg-color);
 }
 
 .sidebar::-webkit-scrollbar {
