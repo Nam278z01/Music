@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Music - Nghe nhạc Mới, tải nhạc Hot chất lượng cao</title>
+    <title>Discovery Artist</title>
     <link rel="shortcut icon" href="./assets/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,17 +16,14 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/sidebar.css">
-    <link rel="stylesheet" href="./assets/css/playmusic.css">
     <link rel="stylesheet" href="./assets/css/navAptAofooter.css">
+    <link rel="stylesheet" href="./assets/css/playmusic.css">
+    <link rel="stylesheet" href="./assets/css/discovery_artist.css">
     <link rel="stylesheet" href="./assets/css/gridmusic.css">
-    <link rel="stylesheet" href="./assets/css/song.css">
-    <link rel="stylesheet" href="./assets/css/home.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 </head>
 
 <body>
-    <div class="app" ng-app="myApp">
+    <div class="app">
         <nav class="sidebar">
             <div class="sidebar__header">
                 <div class="sidebar__brand-name">
@@ -41,8 +38,8 @@
                     <div class="sidebar__user-avatar">
                         <img src="./assets/img/1560232125002.jpg" alt="">
                     </div>
-                    <div class="sidebar__user-name" ng-controller="loginController">
-                        <span title="Unknown" ng-click="authenticate(red)">Unknown</span>
+                    <div class="sidebar__user-name">
+                        <span title="Unknown">Unknown</span>
                         <span>VIP</span>
                     </div>
                 </a>
@@ -59,7 +56,7 @@
                         </a>
                     </li>
                     <li class="sidebar__navigation-item">
-                        <a href="" class="sidebar__navigation-link active">
+                        <a href="./N_home.html" class="sidebar__navigation-link active">
                             <i class='bx bxs-home'></i>
                             <span>Trang chủ</span>
                         </a>
@@ -72,7 +69,7 @@
                         </div>
                         <div class="sidebar__navigation-listsubitem">
                             <div class="sidebar__navigation-subitem">
-                                <a href="#!song" class="sidebar__navigation-sublink">
+                                <a href="" class="sidebar__navigation-sublink">
                                     <span>Bài hát</span>
                                 </a>
                             </div>
@@ -141,9 +138,37 @@
             </div>
         </nav>
 
-        <section class="home-main" ng-view>
-            
-        </section>
+        <div class="submain_contain">
+            <div class="content">
+               
+
+                
+            </div>
+
+            <div class="footer">
+                <div class="link">
+                    <div class="service">
+                        <ul class="nav_service">
+                            <li><a href="">Giới Thiệu</a></li>
+                            <li><a href="">SP-DV</a></li>
+                            <li><a href="">Hỗ Trợ</a></li>
+                            <li><a href="">Thỏa Thuận Người Dùng</a></li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <ul class="nav_service">
+                            <li><i class='bx bxl-facebook-square'></i></li>
+                            <li><i class='bx bxl-google-plus-circle'></i></li>
+                            <li><i class='bx bxl-apple'> </i></li>
+                            <li><i class='bx bxl-microsoft'> </i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="infor">
+                    <p>Website được xây dựng bởi 3 thành viên: An, Nam, Tuyết</p>
+                </div>
+            </div>
+        </div>
 
         <section class="play-music">
             <div class="play-music__header">
@@ -159,31 +184,6 @@
     </div>
 
     <script src="./assets/js/sidebar.js"></script>
-    <script src="./assets/js/home.js"></script>
-    <script>
-        var app2 = angular.module("myApp", ["ngRoute"]);
-        app2.config(function ($routeProvider) {
-            $routeProvider
-                .when("/", {
-                    templateUrl: "playlist.html",
-                })
-                .when("/song", {
-                    templateUrl: "rank.html",
-                    controller: "loginController"
-                })
-                .otherwise({
-                    redirect: '/'
-                })
-        });
-        app2.controller("loginController", function ($scope, $location) {
-            $scope.red = "song"
-            $scope.authenticate = function (username) {
-                // write authentication code here.. 
-                $location.path('/' + username)
-            };
-
-        });
-    </script>
 </body>
 
 </html>

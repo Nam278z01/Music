@@ -148,6 +148,10 @@
     box-shadow: 0 8px 16px rgb(0 0 0 / 20%);
 }
 
+.released__picked-item.picked .released__picked-play {
+    display: flex;
+}
+
 .released__picked-item img {
     height: 8rem;
     width: 8rem;

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/sidebar.css">
     <link rel="stylesheet" href="./assets/css/playmusic.css">
+    <link rel="stylesheet" href="./assets/css/navAptAofooter.css">
     <link rel="stylesheet" href="./assets/css/gridmusic.css">
     <link rel="stylesheet" href="./assets/css/song.css">
     <link rel="stylesheet" href="./assets/css/home.css">
@@ -69,7 +70,7 @@
                         </div>
                         <div class="sidebar__navigation-listsubitem">
                             <div class="sidebar__navigation-subitem">
-                                <a href="./A_discovery_artist.html" class="sidebar__navigation-sublink">
+                                <a href="#" class="sidebar__navigation-sublink">
                                     <span>Bài hát</span>
                                 </a>
                             </div>
@@ -138,7 +139,7 @@
             </div>
         </nav>
 
-        <section class="home-main">
+        <section class="home-main" ng-view>
             <div class="home-main__slide">
                 <div class="home-main__slide-list">
                     <div class="home-main__slide-item">
@@ -924,7 +925,7 @@
                         </div>
                     </div>
                     <div class="released__picked">
-                        <div class="released__picked-item">
+                        <div class="released__picked-item picked">
                             <img src="./assets/img/1635475393032.jpg" alt="">
                             <div class="released__picked-play ratioIn">
                                 <button class="btn btn-outline btn--circle btn-listen" title="nghe">
@@ -1655,7 +1656,30 @@
                     </div>
                 </div>
             </div>
-
+            
+            <div class="footer">
+                <div class="link">
+                    <div class="service">
+                        <ul class="nav_service">
+                            <li><a href="">Giới Thiệu</a></li>
+                            <li><a href="">SP-DV</a></li>
+                            <li><a href="">Hỗ Trợ</a></li>
+                            <li><a href="">Thỏa Thuận Người Dùng</a></li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <ul class="nav_service">
+                            <li><i class='bx bxl-facebook-square'></i></li>
+                            <li><i class='bx bxl-google-plus-circle'></i></li>
+                            <li><i class='bx bxl-apple'> </i></li>
+                            <li><i class='bx bxl-microsoft'> </i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="infor">
+                    <p>Website được xây dựng bởi 3 thành viên: An, Nam, Tuyết</p>
+                </div>
+            </div>
         </section>
 
         <section class="play-music">
