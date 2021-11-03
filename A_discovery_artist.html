@@ -20,9 +20,11 @@
     <link rel="stylesheet" href="./assets/css/playmusic.css">
     <link rel="stylesheet" href="./assets/css/discovery_artist.css">
     <link rel="stylesheet" href="./assets/css/gridmusic.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 </head>
 
-<body>
+<body ng-app="myApp">
     <div class="app">
         <nav class="sidebar">
             <div class="sidebar__header">
@@ -56,7 +58,7 @@
                         </a>
                     </li>
                     <li class="sidebar__navigation-item">
-                        <a href="./N_home.html" class="sidebar__navigation-link active">
+                        <a href="#!N_home" class="sidebar__navigation-link active">
                             <i class='bx bxs-home'></i>
                             <span>Trang chủ</span>
                         </a>
@@ -415,8 +417,20 @@
             </div>
         </section>
     </div>
-    
+    <div ng-view></div>
     <script src="./assets/js/sidebar.js"></script>
+    <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function($routeProvider) {
+          $routeProvider
+          .when("/", {
+        templateUrl : "A_discovery_artist.html"
+         })
+          .when("/N_Home", {
+            templateUrl : "N_Home.html"
+        })
+        });
+    </script>
 </body>
 
 </html>
