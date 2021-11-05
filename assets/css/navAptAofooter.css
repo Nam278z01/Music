@@ -137,11 +137,7 @@
 
 /* footer */
 .footer {
-<<<<<<< HEAD:assets/css/navAofooter.css
     margin-top: 0rem;
-=======
-    margin-top: 6.5rem;
->>>>>>> f29e87a7f80212fec9c8962123dfd6b9daaa0c80:assets/css/navAptAofooter.css
     border-top: 1px solid var(--border-color);
     min-height: 100px;
     width: 100%;
