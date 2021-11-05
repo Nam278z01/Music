@@ -154,6 +154,11 @@
     text-transform: capitalize;
 }
 
+.list-playlist__item-artist.artist {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
 .list-playlist__item-artist a:hover {
     color: var(--main-color);
 }
