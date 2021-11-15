@@ -104,25 +104,63 @@ appMusic.controller('DiscoveryController', function ($scope, $rootScope, $routeP
     }
 })
 
-appMusic.controller('CollectionController', function ($scope, $rootScope, $http, $window) {
+appMusic.controller('CollectionController', function ($scope, $rootScope, $http, $routeParams, $location) {
     $rootScope.currentIndex = 3
     $rootScope.currentSubIndex = 5
+
     $http({
         method: 'get',
         url: './assets/js/dataCollection.json'
     }).then(function (res) {
         $scope.collections = res.data
+        $scope.genres = $scope.collections.filter(collection => collection.KindofCollection == 1)
+        $scope.moods = $scope.collections.filter(collection => collection.KindofCollection == 2)
+        $scope.scenes = $scope.collections.filter(collection => collection.KindofCollection == 3)
+        $scope.topics = $scope.collections.filter(collection => collection.KindofCollection == 4)
+        $scope.pickedCollections = []
+        $scope.pickedCollections = $scope.collections.filter(collection => collection.CollectionID == $routeParams.tl || collection.CollectionID == $routeParams.tt || collection.CollectionID == $routeParams.kc || collection.CollectionID == $routeParams.cd)
     }, function (err) {
         alert("Failed to get collections!")
     })
 
-    // $window.onload = function () {
-    //     var element = document.querySelectorAll('.collection__pick-list-item .collection__pick-item');
-    // }
+    $scope.indexofCollection = 0
+    $scope.showCollection = function (index) {
+        $scope.indexofCollection = index
+    }
+    $scope.isShowCollection = function (index) {
+        return $scope.indexofCollection == index
+    }
 
+    $scope.pickedCollection2 = function (col) {
+        return $scope.pickedCollections.indexOf(col) != -1
+    }
+
+    $scope.pickedCollection = function (col, kindofCollection) {
+        if (kindofCollection == 'tl') {
+            $location.search("tl", col.CollectionID)
+        } else if (kindofCollection == 'tt') {
+            $location.search("tt", col.CollectionID)
+        } else if (kindofCollection == 'kc') {
+            $location.search("kc", col.CollectionID)
+        } else {
+            $location.search("cd", col.CollectionID)
+        }
+    }
+
+    $scope.removeCollection = function (col) {
+        if (col.KindofCollection == 1) {
+            $location.search("tl", null)
+        } else if (col.KindofCollection == 2) {
+            $location.search("tt", null)
+        } else if (col.KindofCollection == 3) {
+            $location.search("kc", null)
+        } else {
+            $location.search("cd", null)
+        }
+    }
 })
 
-appMusic.config(function ($routeProvider) {
+appMusic.config(function ($routeProvider, $locationProvider) {
     $routeProvider
         .when("/", {
             templateUrl: "N_home.html",
@@ -203,6 +241,8 @@ appMusic.config(function ($routeProvider) {
         .otherwise({
             redirect: '/'
         })
+    // $locationProvider.html5Mode(true)
+    // $locationProvider.hashPrefix('!')
 });
 
 appMusic.controller('SidebarController', function ($scope, $rootScope) {

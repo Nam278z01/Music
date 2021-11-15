@@ -1,30 +1,380 @@
 [
     {
-        "CollectionID": "Col01",
-        "CollectionName": "Pop"
+        "CollectionID": "Col0000001",
+        "CollectionName": "Nhạc Trẻ",
+        "KindofCollection": 1
     },
     {
-        "CollectionID": "Col02",
-        "CollectionName": "Electronica/Dance"
+        "CollectionID": "Col0000002",
+        "CollectionName": "Electronica/Dance",
+        "KindofCollection": 1
     },
     {
-        "CollectionID": "Col03",
-        "CollectionName": "R&B/Rock/Rap"
+        "CollectionID": "Col0000003",
+        "CollectionName": "Pop",
+        "KindofCollection": 1
     },
     {
-        "CollectionID": "Col04",
-        "CollectionName": "Trữ tình"
+        "CollectionID": "Col0000004",
+        "CollectionName": "Country",
+        "KindofCollection": 1
     },
     {
-        "CollectionID": "Col05",
-        "CollectionName": "Hòa tấu"
+        "CollectionID": "Col0000005",
+        "CollectionName": "Rock",
+        "KindofCollection": 1
     },
     {
-        "CollectionID": "Col06",
-        "CollectionName": "Piano"
+        "CollectionID": "Col0000006",
+        "CollectionName": "Rap Việt",
+        "KindofCollection": 1
     },
     {
-        "CollectionID": "Col07",
-        "CollectionName": "Buồn"
+        "CollectionID": "Col0000007",
+        "CollectionName": "Không lời",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000008",
+        "CollectionName": "Bolero",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000009",
+        "CollectionName": "Cải lương",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000010",
+        "CollectionName": "Indie Việt",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000011",
+        "CollectionName": "Thiếu nhi",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000012",
+        "CollectionName": "Cách mạng",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000013",
+        "CollectionName": "Trữ tình",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000014",
+        "CollectionName": "Acoustic",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000015",
+        "CollectionName": "Indie",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000016",
+        "CollectionName": "R&B/Hip Hop/Rap",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000017",
+        "CollectionName": "Latin",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000018",
+        "CollectionName": "SoundTrack",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000019",
+        "CollectionName": "Guitar",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000020",
+        "CollectionName": "Piano",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000070",
+        "CollectionName": "Remix Việt",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000071",
+        "CollectionName": "Rock Việt",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000072",
+        "CollectionName": "Blues/Jazz",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000073",
+        "CollectionName": "Nhạc Hàn",
+        "KindofCollection": 1
+    },
+    {
+        "CollectionID": "Col0000074",
+        "CollectionName": "Nhạc Hoa",
+        "KindofCollection": 1
+    },
+
+    {
+        "CollectionID": "Col0000021",
+        "CollectionName": "Buồn",
+        "KindofCollection": 2
+    },
+    {
+        "CollectionID": "Col0000022",
+        "CollectionName": "Cô đơn",
+        "KindofCollection": 2
+    },
+    {
+        "CollectionID": "Col0000023",
+        "CollectionName": "FA",
+        "KindofCollection": 2
+    },
+    {
+        "CollectionID": "Col0000024",
+        "CollectionName": "Nhớ nhung",
+        "KindofCollection": 2
+    },
+    {
+        "CollectionID": "Col0000025",
+        "CollectionName": "Thất tình",
+        "KindofCollection": 2
+    },
+    {
+        "CollectionID": "Col0000026",
+        "CollectionName": "Hưng phấn",
+        "KindofCollection": 2
+    },
+    {
+        "CollectionID": "Col0000027",
+        "CollectionName": "Vui vẻ",
+        "KindofCollection": 2
+    },
+    {
+        "CollectionID": "Col0000028",
+        "CollectionName": "Hy vọng",
+        "KindofCollection": 2
+    },
+    {
+        "CollectionID": "Col0000029",
+        "CollectionName": "Quyết tâm",
+        "KindofCollection": 2
+    },
+    {
+        "CollectionID": "Col0000030",
+        "CollectionName": "Ngọt ngào",
+        "KindofCollection": 2
+    },
+    {
+        "CollectionID": "Col0000031",
+        "CollectionName": "Thư giãn",
+        "KindofCollection": 2
+    },
+
+    {
+        "CollectionID": "Col0000032",
+        "CollectionName": "Cafe",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000033",
+        "CollectionName": "Du lịch",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000034",
+        "CollectionName": "Buổi sáng",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000035",
+        "CollectionName": "Buối tối",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000036",
+        "CollectionName": "Buổi trưa",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000037",
+        "CollectionName": "Lãng mạn",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000038",
+        "CollectionName": "Lái xe",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000039",
+        "CollectionName": "Làm việc",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000040",
+        "CollectionName": "Học tập",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000041",
+        "CollectionName": "Chơi game",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000042",
+        "CollectionName": "Tập gym",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000043",
+        "CollectionName": "Giảm stress",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000044",
+        "CollectionName": "Mùa xuân",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000045",
+        "CollectionName": "Mùa hạ",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000046",
+        "CollectionName": "Mùa thu",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000047",
+        "CollectionName": "Mùa đông",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000048",
+        "CollectionName": "Trước khi ngủ",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000049",
+        "CollectionName": "Hẹn hò",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000050",
+        "CollectionName": "Làm việc nhà",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000051",
+        "CollectionName": "Nắng",
+        "KindofCollection": 3
+    },
+    {
+        "CollectionID": "Col0000052",
+        "CollectionName": "Mưa",
+        "KindofCollection": 3
+    },
+
+    {
+        "CollectionID": "Col0000053",
+        "CollectionName": "Bất hủ",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000054",
+        "CollectionName": "Chill out",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000055",
+        "CollectionName": "Giải thưởng âm nhạc",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000056",
+        "CollectionName": "Cover",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000057",
+        "CollectionName": "Mashup",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000058",
+        "CollectionName": "Song ca",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000059",
+        "CollectionName": "Cổ điển",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000060",
+        "CollectionName": "Tết",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000061",
+        "CollectionName": "Weekend",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000062",
+        "CollectionName": "Tình bạn",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000063",
+        "CollectionName": "Tình yêu",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000064",
+        "CollectionName": "Quê hương",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000065",
+        "CollectionName": "Gia đình",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000066",
+        "CollectionName": "Thầy cô",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000067",
+        "CollectionName": "Epic music",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000068",
+        "CollectionName": "Đoàn - Đảng",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000069",
+        "CollectionName": "Giáng sinh",
+        "KindofCollection": 4
+    },
+    {
+        "CollectionID": "Col0000078",
+        "CollectionName": "Wedding",
+        "KindofCollection": 4
     }
 ]
