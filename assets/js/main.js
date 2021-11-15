@@ -70,6 +70,18 @@ appMusic.controller('SongSearchController', function ($scope, $rootScope, $locat
     }
 })
 
+appMusic.controller('ListenedController', function ($scope, $rootScope, $location, $routeParams, $http) {
+    $rootScope.currentIndex = 7
+    // $rootScope.currentSubIndex = 1
+    $scope.isActiveNav = function (name) {
+        if ($routeParams.l == name) {
+            return true
+        } else {
+            return false
+        }
+    }
+})
+
 appMusic.controller('HomeController', function ($scope, $rootScope, $location, $routeParams, $http) {
     $rootScope.title = 'My Music - Nghe nhạc Mới, tải nhạc Hot chất lượng cao'
 })
@@ -219,6 +231,15 @@ appMusic.config(function ($routeProvider, $locationProvider) {
         })
         .when("/da-nghe", {
             templateUrl: "T_listened.html",
+            controller: "ListenedController"
+        })
+        .when("/da-nghe/playlist", {
+            templateUrl: "listened_playlist.html",
+            controller: "ListenedController"
+        })
+        .when("/da-nghe/album", {
+            templateUrl: "listened_album.html",
+            controller: "ListenedController"
         })
         .when("/bang-xep-hang", {
             templateUrl: "rank.html",
