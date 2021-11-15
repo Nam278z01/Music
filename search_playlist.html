@@ -1,76 +1,40 @@
-<div class="collection__pick" ng-controller="CollectionController">
-    <div class="collection__pick-list">
-        <div class="collection__pick-name">
-            Thể Loại
-        </div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Nhạc Trẻ</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Trữ tình</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Pop</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Electronica/Dance</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Blues/Jazz</span></div>
-        <div class="collection__pick-item" ng-click="ShowCollection()"><i class="bx bxs-chevron-down"></i><span style="text-transform: initial;">Xem thêm ...</span></div>
-        <div class="collection__pick-list-item" ng-show="isShowCollection">
-            <div class="grid">
-                <div class="row sm-gutter">
-                    <div class="col sl-3 l-3" ng-repeat="col in collections">
-                        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>{{col.CollectionName}}</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<form ng-submit="searchInput(name.song)" id="search">
+    <div class="search-icon" ng-click="searchInput(name.song)">
+        <i class='bx bx-search'></i>
     </div>
-    <div class="collection__pick-list">
-        <div class="collection__pick-name">
-            Tâm trạng
-        </div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Nhạc Trẻ</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Trữ tình</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Pop</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Electronica/Dance</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Blues/Jazz</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-down"></i><span  \style="text-transform: initial;">Xem thêm ...</span></div>
+    <div class="search-input">
+        <input type="text" placeholder="Tìm kiếm bài hát, playlist, album, nghệ sĩ..." ng-model="searchValue"
+            ng-change="changeInput()">
     </div>
-    <div class="collection__pick-list">
-        <div class="collection__pick-name">
-            Khung cảnh
-        </div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Nhạc Trẻ</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Trữ tình</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Pop</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Electronica/Dance</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Blues/Jazz</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-down"></i><span style="text-transform: initial;">Xem thêm ...</span></div>
+    <div class="search-delete" ng-show="isChange" ng-click="deleteInput()">
+        <i class='bx bx-x'></i>
     </div>
-    <div class="collection__pick-list">
-        <div class="collection__pick-name">
-            Chủ đề
-        </div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Nhạc Trẻ</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Trữ tình</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Pop</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Electronica/Dance</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-right"></i><span>Blues/Jazz</span></div>
-        <div class="collection__pick-item"><i class="bx bxs-chevron-down"></i><span style="text-transform: initial;">Xem thêm ...</span></div>
-    </div>
+</form>
+
+<div class="nav">
+    <ul class="nav-list">
+        <li class="nav-item">
+            <p class="nav-item-link" ng-click="searchInput(name.song)">Bài hát</p>
+        </li>
+        <li class="nav-item">
+            <p class="active nav-item-link">Playlist</p>
+        </li>
+        <li class="nav-item">
+            <p ng-click="searchInput(name.album)" class="nav-item-link">Album</p>
+        </li>
+        <li class="nav-item">
+            <p ng-click="searchInput(name.artist)" class="nav-item-link">Nghệ sĩ</p>
+        </li>
+    </ul>
 </div>
 
 <div class="content">
     <div class="list-playlist">
         <div class="list-playlist__header">
             <h3 class="list-playlist__name">
-                Tất cả tuyển tập
+                Playlist
+                <span>(Có 213.123 kết quả)</span>
             </h3>
-            <!-- <div class="list-playlist__tag">
-                Đã chọn:
-                <span class="list-playlist__tag-item">
-                    <span class="list-playlist__tag-item-name">
-                        Electronica/Dance
-                    </span>
-                    <span class="list-playlist__tag-delete" title="Xóa">
-                        <i class="bx bxs-x-circle"></i>
-                    </span>
-                </span>
-            </div> -->
         </div>
         <div class="list-playlist__slide">
             <div class="grid">

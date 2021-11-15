@@ -1,0 +1,135 @@
+{
+    "songs": [
+        {
+            "Song": {
+                "SongID": "SG00000001",
+                "SongName": "Easy on me",
+                "Lyric": "[Verse 1]<br/>\r\nThere ain't no gold in this river<br/>\r\nThat I've been washin' my hands in forever<br/>\r\nI know there is hope in these waters<br/>\r\nBut I can't bring myself to swim<br/>\r\nWhen I am drowning in this silence<br/>\r\nBaby, let me in<br/><br/>\r\n\r\n[Chorus]<br/>\r\nGo easy on me, baby<br/>\r\nI was still a child<br/>\r\nDidn't get the chance to<br/>\r\nFeel the world around me<br/>\r\nI had no time to choose what I chose to do<br/>\r\nSo go easy on me<br/><br/>\r\n\r\n[Verse 2]<br/>\r\nThere ain't no room for things to change<br/>\r\nWhen we are both so deeply stuck in our ways<br/>\r\nYou can't deny how hard I have tried<br/>\r\nI changed who I was to put you both first<br/>\r\nBut now I give up<br/>\r\n\r\n[Chorus]<br/>\r\nGo easy on mе, baby<br/>\r\nI was still a child<br/>\r\nDidn't get the chance to<br/>\r\nFeel thе world around me<br/>\r\nHad no time to choose what I chose to do<br/>\r\nSo go easy on me<br/><br/>\r\n\r\n[Bridge]<br/>\r\nI had good intentions<br/>\r\nAnd the highest hopes<br/>\r\nBut I know right now<br/>\r\nIt probably doesn't even show<br/><br/>\r\n\r\n[Chorus]<br/>\r\nGo easy on me, baby<br/>\r\nI was still a child<br/>\r\nI didn't get the chance to<br/>\r\nFeel the world around me<br/>\r\nI had no time to choose what I chose to do<br/>\r\nSo go easy on me<br/>",
+                "ReleaseDate": "/Date(1634230800000)/",
+                "Image": "easy-on-me-edele.jpg",
+                "SongPath": "easy-on-me-edele.mp3",
+                "IsVip": false,
+                "AlbumID": null
+            },
+            "Artists": [
+                {
+                    "ArtistID": "AT00000001",
+                    "ArtistName": "Adele",
+                    "Description": null,
+                    "Image": null,
+                    "ImageBig": null,
+                    "isBand": null,
+                    "Nation": null,
+                    "Gender": null
+                }
+            ]
+        },
+        {
+            "Song": {
+                "SongID": "SG00000002",
+                "SongName": "Viva La Vida",
+                "Lyric": "I used to rule the world<br/>\r\nSeas would rise when I gave the word<br/>\r\nNow in the morning, I sleep alone<br/>\r\nSweep the streets I used to own<br/><br/>\r\nI used to roll the dice<br/>\r\nFeel the fear in my enemy's eyes<br/>\r\nListen as the crowd would sing<br/>\r\nNow the old king is dead, long live the king<br/>\r\nOne minute I held the key<br/>\r\nNext the walls were closed on me<br/>\r\nAnd I discovered that my castles stand<br/>\r\nUpon pillars of salt and pillars of sand<br/><br/>\r\nI hear Jerusalem bells are ringing<br/>\r\nRoman Cavalry choirs are singing<br/>\r\nBe my mirror, my sword and shield<br/>\r\nMy missionaries in a foreign field<br/>\r\nFor some reason I can't explain<br/>\r\nOnce you go there was never, never an honest word<br/>\r\nAnd that was when I ruled the world<br/><br/>\r\nIt was a wicked and wild wind<br/>\r\nBlew down the doors to let me in<br/>\r\nShattered windows and the sound of drums<br/>\r\nPeople couldn't believe what I'd become<br/>\r\nRevolutionaries wait<br/>\r\nFor my head on a silver plate<br/>\r\nJust a puppet on a lonely string<br/>\r\nOh, who would ever want to be king?<br/><br/>\r\nI hear Jerusalem bells are ringing<br/>\r\nRoman Calvary choirs are singing<br/>\r\nBe my mirror, my sword and shield<br/>\r\nMy missionaries in a foreign field<br/>\r\nFor some reason I can't explain<br/>\r\nI know Saint Peter won't call my name<br/>\r\nNever an honest word<br/>\r\nBut that was when I ruled the world<br/><br/>\r\nOh-oh-oh, oh-oh, oh<br/>\r\nOh-oh-oh, oh-oh, oh<br/>\r\nOh-oh-oh, oh-oh, oh<br/>\r\nOh-oh-oh, oh-oh, oh<br/>\r\nOh-oh-oh, oh-oh, oh<br/><br/>\r\nI hear Jerusalem bells are ringing<br/>\r\nRoman Calvary choirs are singing<br/>\r\nBe my mirror, my sword and shield<br/>\r\nMy missionaries in a foreign field<br/>\r\nFor some reason I can't explain<br/>\r\nI know Saint Peter won't call my name<br/>\r\nNever an honest word<br/>\r\nBut that was when I ruled the world<br/>",
+                "ReleaseDate": "/Date(1207587600000)/",
+                "Image": "vivalavida-coldplay.jpg",
+                "SongPath": "vivalavida-coldplay.mp3",
+                "IsVip": false,
+                "AlbumID": null
+            },
+            "Artists": [
+                {
+                    "ArtistID": "AT00000002",
+                    "ArtistName": "Coldplay",
+                    "Description": null,
+                    "Image": null,
+                    "ImageBig": null,
+                    "isBand": null,
+                    "Nation": null,
+                    "Gender": null
+                }
+            ]
+        },
+        {
+            "Song": {
+                "SongID": "SG00000003",
+                "SongName": "My Universe",
+                "Lyric": "Bài hát: My Universe - Coldplay, BTS (Bangtan Boys)<br/><br/>\r\n\r\nYou, you are my universe and<br/>\r\nI just want to put you first<br/>\r\nAnd you, you are my universe, and I<br/><br/>\r\n\r\nIn the night I lie and look up at you<br/>\r\nWhen the morning comes I watch you rise<br/>\r\nThere’s a paradise they couldn’t capture<br/>\r\nThat bright infinity inside your eyes<br/>\r\n\r\nMaeil bam nege nalaga (ga)<br/>\r\nKkumilan geosdo ijeun chae<br/>\r\nNa useumyeo neoleul manna (na)<br/>\r\nNever ending forever baby<br/><br/>\r\n\r\nYou, you are my universe and<br/>\r\nI just want to put you first<br/>\r\nAnd you, you are my universe, and<br/>\r\nYou make my world light up inside<br/><br/>\r\n\r\nEodumi naegen *** pyeonhaesseossji<br/>\r\nGileojin geulimja sogeseo (eyes)<br/><br/>\r\n\r\nAnd they said that we can’t be together<br/>\r\nBecause<br/>\r\nBecause we come from different sides<br/><br/>\r\n\r\nYou, you are my universe and<br/>\r\nI just want to put you first<br/>\r\nAnd you, you are my universe, and<br/>\r\nYou make my world light up inside<br/><br/>\r\n\r\nMy universe (do do, do do)<br/>\r\nMy universe (do do, do do)<br/>\r\nMy universe (do do, do do)<br/>\r\n(You make my world)<br/>\r\nYou make my world light up inside<br/>\r\nMake my world light up inside<br/><br/>\r\n\r\nNaleul balghyeojuneun geon<br/>\r\nNeolan salangeulo su nohajin byeol<br/>\r\nNae ujuui neon<br/>\r\nTto daleun sesangeul mandeuleo juneun geol<br/><br/>\r\n\r\nNeoneun nae byeolija naui ujunikka<br/>\r\nJigeum i silyeondo gyeolgugen jamsinikka<br/>\r\nNeoneun eonjekkajina jigeumcheoleom balggeman bichnajwo<br/>\r\nUlineun neoleul ttala i gin bameul sunoheul geoya<br/><br/>\r\n\r\nNeowa hamkke nalaga (ga)<br/>\r\nWhen I’m without you I’m crazy<br/>\r\nJa eoseo nae soneul jaba (a)<br/>\r\nWe are made of each other baby<br/><br/>\r\n\r\nYou, you are my universe and<br/>\r\nI just want to put you first<br/>\r\nAnd you, you are my universe, and<br/>\r\nYou make my world light up inside<br/><br/>\r\n\r\nMy universe (you, you are)<br/>\r\nMy universe (I just want)<br/>\r\nMy universe (you, you are)<br/>\r\nMy universe and I<br/>\r\nMy universe<br/>",
+                "ReleaseDate": "/Date(1632416400000)/",
+                "Image": "myuniverse-coldplay.jpg",
+                "SongPath": "myuniverse-coldplay.mp3",
+                "IsVip": false,
+                "AlbumID": null
+            },
+            "Artists": [
+                {
+                    "ArtistID": "AT00000002",
+                    "ArtistName": "Coldplay",
+                    "Description": null,
+                    "Image": null,
+                    "ImageBig": null,
+                    "isBand": null,
+                    "Nation": null,
+                    "Gender": null
+                },
+                {
+                    "ArtistID": "AT00000011",
+                    "ArtistName": "BTS",
+                    "Description": null,
+                    "Image": null,
+                    "ImageBig": null,
+                    "isBand": null,
+                    "Nation": null,
+                    "Gender": null
+                }
+            ]
+        },
+        {
+            "Song": {
+                "SongID": "SG00000004",
+                "SongName": "Old Town Road",
+                "Lyric": "Bài hát: Old Town Road - Lil Nas X<br><br>\r\n\r\nYeah, I'm gonna take my horse to the old town road<br>\r\nI'm gonna ride 'til I can't no more<br>\r\nI'm gonna take my horse to the old town road<br>\r\nI'm gonna ride 'til I can't no more (Kio, Kio)<br><br>\r\n\r\nI got the horses in the back<br>\r\nHorse tack is attached<br>\r\nHat is matte black<br>\r\nGot the boots that's black to match<br>\r\nRidin' on a horse, ha<br>\r\nYou can whip your Porsche<br>\r\nI been in the valley<br>\r\nYou ain't been up off that porch, now<br><br>\r\n\r\nCan't nobody tell me nothin'<br>\r\nYou can't tell me nothin'<br>\r\nCan't nobody tell me nothin'<br>\r\nYou can't tell me nothin'<br><br>\r\n\r\nRidin' on a tractor<br>\r\nLean all in my bladder<br>\r\nCheated on my baby<br>\r\nYou can go and ask her<br>\r\nMy life is a movie<br>\r\nBull ridin' and boobies<br>\r\nCowboy hat from Gucci<br>\r\nWrangler on my booty<br>\r\n\r\nCan't nobody tell me nothin'<br>\r\nYou can't tell me nothin'<br>\r\nCan't nobody tell me nothin'<br>\r\nYou can't tell me nothin'<br><br>\r\n\r\nYeah, I'm gonna take my horse to the old town road<br>\r\nI'm gonna ride 'til I can't no more<br>\r\nI'm gonna take my horse to the old town road<br>\r\nI'm gonna ride 'til I can't no more<br>\r\nI got the hor<br>",
+                "ReleaseDate": "/Date(1632675600000)/",
+                "Image": "oldtownroad-lilnasx.jpg",
+                "SongPath": "oldtownroad-lilnasx.mp3",
+                "IsVip": false,
+                "AlbumID": null
+            },
+            "Artists": [
+                {
+                    "ArtistID": "AT00000004",
+                    "ArtistName": "Lil Nas X",
+                    "Description": null,
+                    "Image": null,
+                    "ImageBig": null,
+                    "isBand": null,
+                    "Nation": null,
+                    "Gender": null
+                }
+            ]
+        },
+        {
+            "Song": {
+                "SongID": "SG00000005",
+                "SongName": "Tides",
+                "Lyric": "[Verse 1]<br/>\r\nI have grown up, I am a father now<br/>\r\nEverything has changed, but I am still the same somehow<br/>\r\nYou know I've never been afraid of death<br/>\r\nBut now I wanna see the things that haven't happened yet<br/>\r\nI still love getting out of my mind, I should cut it down<br/>\r\nI still know people I don't like and I should cut them out<br/>\r\nI feel embarrassed 'bout the things that I did in my youth<br/>\r\n'Cause now I have a child, I know one day that you will do<br/><br/>\r\n\r\n[Pre-Chorus]<br/>\r\nFreight cargo, dot stops and aeroplanes<br/>\r\nLate-night calls, signal is in and out again<br/>\r\nFeelin' low, serotonin known better days<br/>\r\nGo, go, go! But every moment you're here with me<br/><br/>\r\n\r\n[Chorus]<br/>\r\nTimе stops to still<br/>\r\nWhen you are in my arms, it always will<br/>\r\nAnd life, lifе is changin' tides<br/><br/>\r\n\r\n[Verse 2]<br/>\r\nI lost the confidence in who I was<br/>\r\nToo busy tryna chase the high and get the numbers up<br/>\r\nI have the same dream every night<br/>\r\nA bullet through my brain the moment that I close my eyes<br/>\r\nI still have to lean on a shoulder when I've broken down<br/>\r\nAnd I have people that depend on me to sort them out<br/>\r\nI sometimes fantasise I disappear without a trace<br/>\r\nI've no regrets, but wish I did things in a different way<br/>\r\n\r\n[Pre-Chorus]<br/>\r\nLow fly zone, lawsuits, and film stars<br/>\r\nHeadline wrote the princess and the face scar<br/>\r\nBroken bones, break-ins, and Babylon<br/>\r\nGo, go, go! But every moment you're here with me<br/><br/>\r\n\r\n[Chorus]<br/>\r\nTime stops to still<br/>\r\nWhen you are in my arms, it always will<br/>\r\nAnd life, life is changin' tides<br/>\r\nTime stops to still<br/>\r\nWhen you are in my arms, it always will<br/>\r\nAnd life, life is changin' tides<br/>",
+                "ReleaseDate": "/Date(1635440400000)/",
+                "Image": "tides-edsheeran.jpg",
+                "SongPath": "tides-edsheeran.mp3",
+                "IsVip": false,
+                "AlbumID": null
+            },
+            "Artists": [
+                {
+                    "ArtistID": "AT00000003",
+                    "ArtistName": "Ed Sheeran",
+                    "Description": null,
+                    "Image": null,
+                    "ImageBig": null,
+                    "isBand": null,
+                    "Nation": null,
+                    "Gender": null
+                }
+            ]
+        }
+    ],
+    "totalCount": 1100
+}

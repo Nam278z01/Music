@@ -204,13 +204,11 @@
 }
 
 .sidebar__navigation-listsubitem {
-    height: 0px;
     overflow: hidden;
     transition: height 200ms linear;
 }
 
 .sidebar__navigation-subitem {
-    
 }
 
 .sidebar__navigation-sublink {

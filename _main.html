@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="AppMusic">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Music - Nghe nhạc Mới, tải nhạc Hot chất lượng cao</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.png">
+    <title>{{title}}</title>
+    <link rel="shortcut icon" href="./assets/img/Default/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,14 +20,17 @@
     <link rel="stylesheet" href="./assets/css/navAptAofooter.css">
     <link rel="stylesheet" href="./assets/css/gridmusic.css">
     <link rel="stylesheet" href="./assets/css/song.css">
+    <link rel="stylesheet" href="./assets/css/songdetail.css">
     <link rel="stylesheet" href="./assets/css/home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="./assets/package/dirPagination.js"></script>
+    <script src="./assets/js/main.js"></script>
 </head>
 
 <body>
-    <div class="app" ng-app="AppMusic">
-        <nav class="sidebar">
+    <div class="app">
+        <nav class="sidebar" ng-controller="SidebarController">
             <div class="sidebar__header">
                 <div class="sidebar__brand-name">
                     MM
@@ -37,9 +40,9 @@
                 </a>
             </div>
             <div class="sidebar__userAset">
-                <a href="#!user" class="sidebar__user">
+                <a href="#!/nguoi-dung" class="sidebar__user" ng-click="changePage(-1)">
                     <div class="sidebar__user-avatar">
-                        <img src="./assets/img/1560232125002.jpg" alt="">
+                        <img src="./assets/img/Default/1560232125002.jpg" alt="">
                     </div>
                     <div class="sidebar__user-name">
                         <span title="Unknown">Unknown</span>
@@ -53,86 +56,86 @@
             <div class="sidebar__navigation">
                 <ul class="sidebar__navigation-listitem">
                     <li class="sidebar__navigation-item">
-                        <a href="#!search" class="sidebar__navigation-link">
+                        <a href="#!/tim-kiem" class="sidebar__navigation-link" ng-class="{active:isActive(0)}" ng-click="changePage(0)">
                             <i class='bx bx-search'></i>
                             <span>Tìm kiếm</span>
                         </a>
                     </li>
                     <li class="sidebar__navigation-item">
-                        <a href="#!/" class="sidebar__navigation-link active">
+                        <a href="#!/" class="sidebar__navigation-link" ng-class="{active:isActive(1)}" ng-click="changePage(1)">
                             <i class='bx bxs-home'></i>
                             <span>Trang chủ</span>
                         </a>
                     </li>
                     <li class="sidebar__navigation-item">
-                        <div class="sidebar__navigation-link">
+                        <div class="sidebar__navigation-link show" ng-class="{active:isActive(2)}" >
                             <i class='bx bxs-compass'></i>
                             <span>Khám phá</span>
                             <i class='bx bx-chevron-up'></i>
                         </div>
                         <div class="sidebar__navigation-listsubitem">
                             <div class="sidebar__navigation-subitem">
-                                <a href="#!discovery/song" class="sidebar__navigation-sublink">
+                                <a href="#!/kham-pha/bai-hat" class="sidebar__navigation-sublink" ng-class="{active:isSubActive(1)}" ng-click="changePage(2); changeSubPage(1)">
                                     <span>Bài hát</span>
                                 </a>
                             </div>
                             <div class="sidebar__navigation-subitem">
-                                <a href="#!discovery/playlist" class="sidebar__navigation-sublink">
+                                <a href="#!/kham-pha/playlist" class="sidebar__navigation-sublink" ng-class="{active:isSubActive(2)}" ng-click="changePage(2); changeSubPage(2)">
                                     <span>Playlist</span>
                                 </a>
                             </div>
                             <div class="sidebar__navigation-subitem">
-                                <a href="#!discovery/album" class="sidebar__navigation-sublink">
+                                <a href="#!/kham-pha/album" class="sidebar__navigation-sublink" ng-class="{active:isSubActive(3)}" ng-click="changePage(2); changeSubPage(3)">
                                     <span>Album</span>
                                 </a>
                             </div>
                             <div class="sidebar__navigation-subitem">
-                                <a href="#!discovery/artist" class="sidebar__navigation-sublink">
+                                <a href="#!/kham-pha/nghe-si" class="sidebar__navigation-sublink" ng-class="{active:isSubActive(4)}" ng-click="changePage(2); changeSubPage(4)">
                                     <span>Nghệ sĩ</span>
                                 </a>
                             </div>
                         </div>
                     </li>
                     <li class="sidebar__navigation-item">
-                        <div class="sidebar__navigation-link">
+                        <div class="sidebar__navigation-link show" ng-class="{active:isActive(3)}">
                             <i class='bx bxs-music'></i>
                             <span>Nghe gì hôm nay</span>
                             <i class='bx bx-chevron-up'></i>
                         </div>
                         <div class="sidebar__navigation-listsubitem">
                             <div class="sidebar__navigation-subitem">
-                                <a href="#!collection" class="sidebar__navigation-sublink">
+                                <a href="#!/tuyen-tap" class="sidebar__navigation-sublink" ng-class="{active:isSubActive(5)}" ng-click="changePage(3); changeSubPage(5)">
                                     <span>Tuyển tập</span>
                                 </a>
                             </div>
                             <div class="sidebar__navigation-subitem">
-                                <a href="#!top100" class="sidebar__navigation-sublink">
+                                <a href="#!/top-100" class="sidebar__navigation-sublink" ng-class="{active:isSubActive(6)}" ng-click="changePage(3); changeSubPage(6)">
                                     <span>Top 100</span>
                                 </a>
                             </div>
                         </div>
                     </li>
                     <li class="sidebar__navigation-item">
-                        <a href="" class="sidebar__navigation-link">
+                        <a href="#!/bang-xep-hang" class="sidebar__navigation-link" ng-class="{active:isActive(4)}" ng-click="changePage(4)">
                             <i class='bx bx-bar-chart'></i>
                             <span>BXH MM</span>
                         </a>
                     </li>
-                    <div class="sidebar__navigation-library">THƯ VIỆN</div>
+                    <li class="sidebar__navigation-library">THƯ VIỆN</li>
                     <li class="sidebar__navigation-item">
-                        <a href="#!myplaylist" class="sidebar__navigation-link">
+                        <a href="#!/my-playlist" class="sidebar__navigation-link" ng-class="{active:isActive(5)}" ng-click="changePage(5)">
                             <i class='bx bx-cloud'></i>
                             <span>My Playlist</span>
                         </a>
                     </li>
                     <li class="sidebar__navigation-item">
-                        <a href="#!liked" class="sidebar__navigation-link">
+                        <a href="#!/da-thich" class="sidebar__navigation-link" ng-class="{active:isActive(6)}" ng-click="changePage(6)">
                             <i class='bx bx-heart'></i>
                             <span>Đã thích</span>
                         </a>
                     </li>
                     <li class="sidebar__navigation-item">
-                        <a href="#!listened" class="sidebar__navigation-link">
+                        <a href="#!/da-nghe" class="sidebar__navigation-link" ng-class="{active:isActive(7)}" ng-click="changePage(7)">
                             <i class='bx bx-history'></i>
                             <span>Lịch sử</span>
                         </a>
@@ -142,16 +145,18 @@
         </nav>
 
         <section class="home-main">
-            <div ng-view></div>
+            <div ng-view>
+                
+            </div>
 
             <div class="footer">
                 <div class="link">
                     <div class="service">
                         <ul class="nav_service">
-                            <li><a href="">Giới Thiệu</a></li>
-                            <li><a href="">SP-DV</a></li>
-                            <li><a href="">Hỗ Trợ</a></li>
-                            <li><a href="">Thỏa Thuận Người Dùng</a></li>
+                            <li><a href="#!/">Giới Thiệu</a></li>
+                            <li><a href="#!/">SP-DV</a></li>
+                            <li><a href="#!/">Hỗ Trợ</a></li>
+                            <li><a href="#!/">Thỏa Thuận Người Dùng</a></li>
                         </ul>
                     </div>
                     <div class="service">
@@ -171,7 +176,7 @@
 
         <section class="play-music">
             <div class="play-music__header">
-                <img src="./assets/img/default_player3.jpg" alt="">
+                <img src="./assets/img/Default/default_player3.jpg" alt="">
                 <p>Thưởng thức những giai điệu theo cách riêng của bạn</p>
                 <button class="btn play-music__btn-listen btn--primary btn-outline">
                     Nghe nào
@@ -181,9 +186,6 @@
             </div>
         </section>
     </div>
-
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/sidebar.js"></script>
 </body>
 
 </html>

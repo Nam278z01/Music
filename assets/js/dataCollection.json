@@ -1,0 +1,30 @@
+[
+    {
+        "CollectionID": "Col01",
+        "CollectionName": "Pop"
+    },
+    {
+        "CollectionID": "Col02",
+        "CollectionName": "Electronica/Dance"
+    },
+    {
+        "CollectionID": "Col03",
+        "CollectionName": "R&B/Rock/Rap"
+    },
+    {
+        "CollectionID": "Col04",
+        "CollectionName": "Trữ tình"
+    },
+    {
+        "CollectionID": "Col05",
+        "CollectionName": "Hòa tấu"
+    },
+    {
+        "CollectionID": "Col06",
+        "CollectionName": "Piano"
+    },
+    {
+        "CollectionID": "Col07",
+        "CollectionName": "Buồn"
+    }
+]
