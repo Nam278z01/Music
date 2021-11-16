@@ -42,6 +42,16 @@
 }
 
 .list-playlist__item {
+    position: relative;
+}
+
+.song_vip {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 20% !important;
+    height: 8% !important;
+    opacity: 0.9;
 }
 
 .decorative:first-child, .decorative:nth-child(2) {

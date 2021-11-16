@@ -6,8 +6,8 @@
                 "SongName": "Easy on me",
                 "Lyric": "[Verse 1]<br/>\r\nThere ain't no gold in this river<br/>\r\nThat I've been washin' my hands in forever<br/>\r\nI know there is hope in these waters<br/>\r\nBut I can't bring myself to swim<br/>\r\nWhen I am drowning in this silence<br/>\r\nBaby, let me in<br/><br/>\r\n\r\n[Chorus]<br/>\r\nGo easy on me, baby<br/>\r\nI was still a child<br/>\r\nDidn't get the chance to<br/>\r\nFeel the world around me<br/>\r\nI had no time to choose what I chose to do<br/>\r\nSo go easy on me<br/><br/>\r\n\r\n[Verse 2]<br/>\r\nThere ain't no room for things to change<br/>\r\nWhen we are both so deeply stuck in our ways<br/>\r\nYou can't deny how hard I have tried<br/>\r\nI changed who I was to put you both first<br/>\r\nBut now I give up<br/>\r\n\r\n[Chorus]<br/>\r\nGo easy on mе, baby<br/>\r\nI was still a child<br/>\r\nDidn't get the chance to<br/>\r\nFeel thе world around me<br/>\r\nHad no time to choose what I chose to do<br/>\r\nSo go easy on me<br/><br/>\r\n\r\n[Bridge]<br/>\r\nI had good intentions<br/>\r\nAnd the highest hopes<br/>\r\nBut I know right now<br/>\r\nIt probably doesn't even show<br/><br/>\r\n\r\n[Chorus]<br/>\r\nGo easy on me, baby<br/>\r\nI was still a child<br/>\r\nI didn't get the chance to<br/>\r\nFeel the world around me<br/>\r\nI had no time to choose what I chose to do<br/>\r\nSo go easy on me<br/>",
                 "ReleaseDate": "/Date(1634230800000)/",
-                "Image": "easy-on-me-edele.jpg",
-                "SongPath": "easy-on-me-edele.mp3",
+                "Image": "easy-on-me-adele.jpg",
+                "SongPath": "easy-on-me-adele.mp3",
                 "IsVip": false,
                 "AlbumID": null
             },
@@ -56,7 +56,7 @@
                 "ReleaseDate": "/Date(1632416400000)/",
                 "Image": "myuniverse-coldplay.jpg",
                 "SongPath": "myuniverse-coldplay.mp3",
-                "IsVip": false,
+                "IsVip": true,
                 "AlbumID": null
             },
             "Artists": [

@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./assets/css/song.css">
     <link rel="stylesheet" href="./assets/css/songdetail.css">
     <link rel="stylesheet" href="./assets/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="./assets/package/dirPagination.js"></script>
@@ -56,41 +57,47 @@
             <div class="sidebar__navigation">
                 <ul class="sidebar__navigation-listitem">
                     <li class="sidebar__navigation-item">
-                        <a href="#!/tim-kiem" class="sidebar__navigation-link" ng-class="{active:isActive(0)}" ng-click="changePage(0)">
+                        <a href="#!/tim-kiem" class="sidebar__navigation-link" ng-class="{active:isActive(0)}"
+                            ng-click="changePage(0)">
                             <i class='bx bx-search'></i>
                             <span>Tìm kiếm</span>
                         </a>
                     </li>
                     <li class="sidebar__navigation-item">
-                        <a href="#!/" class="sidebar__navigation-link" ng-class="{active:isActive(1)}" ng-click="changePage(1)">
+                        <a href="#!/" class="sidebar__navigation-link" ng-class="{active:isActive(1)}"
+                            ng-click="changePage(1)">
                             <i class='bx bxs-home'></i>
                             <span>Trang chủ</span>
                         </a>
                     </li>
                     <li class="sidebar__navigation-item">
-                        <div class="sidebar__navigation-link show" ng-class="{active:isActive(2)}" >
+                        <div class="sidebar__navigation-link show" ng-class="{active:isActive(2)}">
                             <i class='bx bxs-compass'></i>
                             <span>Khám phá</span>
                             <i class='bx bx-chevron-up'></i>
                         </div>
                         <div class="sidebar__navigation-listsubitem">
                             <div class="sidebar__navigation-subitem">
-                                <a href="#!/kham-pha/bai-hat" class="sidebar__navigation-sublink" ng-class="{active:isSubActive(1)}" ng-click="changePage(2); changeSubPage(1)">
+                                <a href="#!/kham-pha/bai-hat" class="sidebar__navigation-sublink"
+                                    ng-class="{active:isSubActive(1)}" ng-click="changePage(2); changeSubPage(1)">
                                     <span>Bài hát</span>
                                 </a>
                             </div>
                             <div class="sidebar__navigation-subitem">
-                                <a href="#!/kham-pha/playlist" class="sidebar__navigation-sublink" ng-class="{active:isSubActive(2)}" ng-click="changePage(2); changeSubPage(2)">
+                                <a href="#!/kham-pha/playlist" class="sidebar__navigation-sublink"
+                                    ng-class="{active:isSubActive(2)}" ng-click="changePage(2); changeSubPage(2)">
                                     <span>Playlist</span>
                                 </a>
                             </div>
                             <div class="sidebar__navigation-subitem">
-                                <a href="#!/kham-pha/album" class="sidebar__navigation-sublink" ng-class="{active:isSubActive(3)}" ng-click="changePage(2); changeSubPage(3)">
+                                <a href="#!/kham-pha/album" class="sidebar__navigation-sublink"
+                                    ng-class="{active:isSubActive(3)}" ng-click="changePage(2); changeSubPage(3)">
                                     <span>Album</span>
                                 </a>
                             </div>
                             <div class="sidebar__navigation-subitem">
-                                <a href="#!/kham-pha/nghe-si" class="sidebar__navigation-sublink" ng-class="{active:isSubActive(4)}" ng-click="changePage(2); changeSubPage(4)">
+                                <a href="#!/kham-pha/nghe-si" class="sidebar__navigation-sublink"
+                                    ng-class="{active:isSubActive(4)}" ng-click="changePage(2); changeSubPage(4)">
                                     <span>Nghệ sĩ</span>
                                 </a>
                             </div>
@@ -104,38 +111,44 @@
                         </div>
                         <div class="sidebar__navigation-listsubitem">
                             <div class="sidebar__navigation-subitem">
-                                <a href="#!/tuyen-tap" class="sidebar__navigation-sublink" ng-class="{active:isSubActive(5)}" ng-click="changePage(3); changeSubPage(5)">
+                                <a href="#!/tuyen-tap" class="sidebar__navigation-sublink"
+                                    ng-class="{active:isSubActive(5)}" ng-click="changePage(3); changeSubPage(5)">
                                     <span>Tuyển tập</span>
                                 </a>
                             </div>
                             <div class="sidebar__navigation-subitem">
-                                <a href="#!/top-100" class="sidebar__navigation-sublink" ng-class="{active:isSubActive(6)}" ng-click="changePage(3); changeSubPage(6)">
+                                <a href="#!/top-100?n=vn&col=Col0000001" class="sidebar__navigation-sublink"
+                                    ng-class="{active:isSubActive(6)}" ng-click="changePage(3); changeSubPage(6)">
                                     <span>Top 100</span>
                                 </a>
                             </div>
                         </div>
                     </li>
                     <li class="sidebar__navigation-item">
-                        <a href="#!/bang-xep-hang" class="sidebar__navigation-link" ng-class="{active:isActive(4)}" ng-click="changePage(4)">
+                        <a href="#!/bang-xep-hang" class="sidebar__navigation-link" ng-class="{active:isActive(4)}"
+                            ng-click="changePage(4)">
                             <i class='bx bx-bar-chart'></i>
                             <span>BXH MM</span>
                         </a>
                     </li>
                     <li class="sidebar__navigation-library">THƯ VIỆN</li>
                     <li class="sidebar__navigation-item">
-                        <a href="#!/my-playlist" class="sidebar__navigation-link" ng-class="{active:isActive(5)}" ng-click="changePage(5)">
+                        <a href="#!/my-playlist" class="sidebar__navigation-link" ng-class="{active:isActive(5)}"
+                            ng-click="changePage(5)">
                             <i class='bx bx-cloud'></i>
                             <span>My Playlist</span>
                         </a>
                     </li>
                     <li class="sidebar__navigation-item">
-                        <a href="#!/da-thich" class="sidebar__navigation-link" ng-class="{active:isActive(6)}" ng-click="changePage(6)">
+                        <a href="#!/da-thich/bai-hat" class="sidebar__navigation-link" ng-class="{active:isActive(6)}"
+                            ng-click="changePage(6)">
                             <i class='bx bx-heart'></i>
                             <span>Đã thích</span>
                         </a>
                     </li>
                     <li class="sidebar__navigation-item">
-                        <a href="#!/da-nghe" class="sidebar__navigation-link" ng-class="{active:isActive(7)}" ng-click="changePage(7)">
+                        <a href="#!/da-nghe/bai-hat" class="sidebar__navigation-link" ng-class="{active:isActive(7)}"
+                            ng-click="changePage(7)">
                             <i class='bx bx-history'></i>
                             <span>Lịch sử</span>
                         </a>
@@ -146,7 +159,7 @@
 
         <section class="home-main">
             <div ng-view>
-                
+
             </div>
 
             <div class="footer">
@@ -174,15 +187,90 @@
             </div>
         </section>
 
-        <section class="play-music">
-            <div class="play-music__header">
-                <img src="./assets/img/Default/default_player3.jpg" alt="">
-                <p>Thưởng thức những giai điệu theo cách riêng của bạn</p>
-                <button class="btn play-music__btn-listen btn--primary btn-outline">
-                    Nghe nào
-                </button>
+        <section class="play-music" ng-controller="PlayMusicController">
+            <div class="background">
+                <img src="./assets/img/Default/background10.jpg" alt="">
+                <img src="./assets/img/Default/background1.jpg" alt="">
+                <img src="./assets/img/Default/background2.jpg" alt="">
+                <img src="./assets/img/Default/background3.jpg" alt="">
+                <img src="./assets/img/Default/background4.jpg" alt="">
+                <img src="./assets/img/Default/background5.jpg" alt="">
+                <img src="./assets/img/Default/background6.jpg" alt="">
+                <img src="./assets/img/Default/background7.jpg" alt="">
+                <img src="./assets/img/Default/background8.jpg" alt="">
+                <img src="./assets/img/Default/background9.jpg" alt="">
             </div>
-            <div class="playmusic__main">
+            <div class="play-music__main">
+                <div class="media">
+                    <div class="media-left">
+                        <img src="./assets/img/Song/{{song.Song.Image}}" alt="{{song.Song.SongName}}">
+                    </div>
+                    <div class="media-content">
+                        <marquee class="song__name">
+                            {{song.Song.SongName}}
+                        </marquee>
+                        <div class="song__artist">
+                            <span ng-repeat="a in song.Artists">{{a.ArtistName}}</span>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <div class="song__like">
+                            <button class="btn btn--circle btn-song-like">
+                                <i class='bx bx-heart'></i>
+                            </button>
+                        </div>
+                        <div class="song__more">
+                            <button class="btn btn--circle btn-song-more">
+                                <i class='bx bx-dots-vertical-rounded'></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="controls__player">
+                        <button class="btn btn--circle">
+                            <i class='bx bx-shuffle'></i>
+                        </button>
+                        <button class="btn btn--circle">
+                            <i class='bx bx-fast-forward bx-flip-horizontal'></i>
+                        </button>
+                        <button class="btn btn--circle">
+                            <i class='bx bx-play'></i>
+                            <!-- <i class='bx bx-pause'></i> -->
+                        </button>
+                        <button class="btn btn--circle">
+                            <i class='bx bx-fast-forward'></i>
+                        </button>
+                        <button class="btn btn--circle">
+                            <i class='bx bx-transfer'></i>
+                        </button>
+                    </div>
+                    <div class="controls_time">
+                        <span class="controls_time--right">00.00</span>
+                        <input id="progress" class="controls_time--range" value="0" type="range" step="1" min="0"
+                            max="100">
+                        <audio autoplay id="audio" src="./assets/mp3/{{song.Song.SongPath}}" style="display: none;"></audio>
+                        <span class="controls_time--left">03.22</span>
+                    </div>
+                </div>
+                <div class="controls-extend">
+                    <button class="btn btn--circle">
+                        <i class='bx bxl-youtube'></i>
+                    </button>
+                    <button class="btn btn--circle btn-expand" ng-click="isFullScreen()">
+                        <i class='bx bx-fullscreen' ng-hide="open"></i>
+                        <i class='bx bx-exit-fullscreen' ng-show="open"></i>
+                    </button>
+                    <div class="volume">
+                        <button class="btn btn--circle">
+                            <i class='bx bx-volume-full'></i>
+                        </button>
+                        <input class="controls_volume" value="100" type="range" step="1" min="0" max="100">
+                    </div>
+                    <button class="btn btn--circle">
+                        <i class='bx bx-slider-alt'></i>
+                    </button>
+                </div>
             </div>
         </section>
     </div>

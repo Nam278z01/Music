@@ -39,7 +39,7 @@
         <div class="list-playlist__slide">
             <div class="grid">
                 <div class="row sm-gutter">
-                    <div class="col l-3 sl-2" dir-paginate="s in songs | itemsPerPage: pageSize" total-items="totalCount"
+                    <div class="col l-2" dir-paginate="s in songs | itemsPerPage: pageSize" total-items="totalCount"
                         current-page="pageIndex">
                         <div class="list-playlist__item" style="margin-bottom: 24px">
                             <div class="ratio1-1">
@@ -50,7 +50,7 @@
                                     <button class="btn btn-like btn--circle" title="Yêu thích">
                                         <i class='bx bx-heart'></i>
                                     </button>
-                                    <div class="list-playlist__item-play">
+                                    <div class="list-playlist__item-play" ng-click="playMusic(s)">
                                         <button class="btn btn-outline btn--circle btn-listen" title="nghe">
                                             <i class='bx bxs-right-arrow'></i>
                                         </button>
@@ -60,6 +60,7 @@
                                     </button>
                                 </div>
                             </div>
+                            <img src="./assets/img/Default/vip-label.3dd6ac7e.svg" alt="" class="song_vip" ng-show="s.Song.IsVip">
                             <div class="list-playlist__item-name" title="{{s.Song.SongName}}">
                                 <a href="#!/chi-tiet/bai-hat?song={{s.Song.SongID}}" ng-click="GetSong(s.Song.SongID)">{{s.Song.SongName}}</a>
                             </div>

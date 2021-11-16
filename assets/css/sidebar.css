@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width: 200px;
+    width: 210px;
     border: 1px solid var(--border-color);
     overflow-y: scroll;
     user-select: none;
@@ -93,7 +93,7 @@
 
 .sidebar__btn-setting {
     padding: 12px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .sidebar__btn-setting i{
@@ -106,7 +106,7 @@
 
 .sidebar__navigation-listitem {
     padding: 16px 0;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
 .sidebar__navigation-library {

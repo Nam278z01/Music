@@ -68,18 +68,47 @@ appMusic.controller('SongSearchController', function ($scope, $rootScope, $locat
             alert("Failed to get collections!")
         })
     }
+
+    $scope.playMusic = function (song) {
+        $rootScope.song = song
+    }
 })
 
-appMusic.controller('ListenedController', function ($scope, $rootScope, $location, $routeParams, $http) {
+appMusic.controller('SongListenedController', function ($scope, $rootScope, $location, $routeParams, $http) {
     $rootScope.currentIndex = 7
-    // $rootScope.currentSubIndex = 1
-    $scope.isActiveNav = function (name) {
-        if ($routeParams.l == name) {
-            return true
-        } else {
-            return false
-        }
-    }
+    $rootScope.title = "Bài hát đã nghe"
+})
+
+
+appMusic.controller('PlaylistListenedController', function ($scope, $rootScope, $location, $routeParams, $http) {
+    $rootScope.currentIndex = 7
+    $rootScope.title = "Playlist đã nghe"
+})
+
+appMusic.controller('AlbumListenedController', function ($scope, $rootScope, $location, $routeParams, $http) {
+    $rootScope.currentIndex = 7
+    $rootScope.title = "Album đã nghe"
+})
+
+appMusic.controller('SongLikedController', function ($scope, $rootScope, $location, $routeParams, $http) {
+    $rootScope.currentIndex = 6
+    $rootScope.title = "Bài hát đã thích"
+})
+
+
+appMusic.controller('PlaylistLikedController', function ($scope, $rootScope, $location, $routeParams, $http) {
+    $rootScope.currentIndex = 6
+    $rootScope.title = "Playlist đã thích"
+})
+
+appMusic.controller('AlbumLikedController', function ($scope, $rootScope, $location, $routeParams, $http) {
+    $rootScope.currentIndex = 6
+    $rootScope.title = "Album đã thích"
+})
+
+appMusic.controller('MyPlaylistController', function ($scope, $rootScope, $location, $routeParams, $http) {
+    $rootScope.currentIndex = 5
+    $rootScope.title = "My Playlist"
 })
 
 appMusic.controller('HomeController', function ($scope, $rootScope, $location, $routeParams, $http) {
@@ -116,6 +145,27 @@ appMusic.controller('DiscoveryController', function ($scope, $rootScope, $routeP
     }
 })
 
+appMusic.controller('Top100Controller', function ($scope, $rootScope, $routeParams, $location) {
+    $rootScope.currentIndex = 3
+    $rootScope.currentSubIndex = 6
+    $rootScope.title = "Top 100"
+    
+    $scope.isActiveNav = function (name) {
+        if ($routeParams.n == name) {
+            return true
+        } else {
+            return false
+        }
+    }
+    $scope.isActiveCollection = function (colId) {
+        if ($routeParams.col == colId) {
+            return true
+        } else {
+            return false
+        }
+    }
+})
+
 appMusic.controller('CollectionController', function ($scope, $rootScope, $http, $routeParams, $location) {
     $rootScope.currentIndex = 3
     $rootScope.currentSubIndex = 5
@@ -134,14 +184,6 @@ appMusic.controller('CollectionController', function ($scope, $rootScope, $http,
     }, function (err) {
         alert("Failed to get collections!")
     })
-
-    $scope.indexofCollection = 0
-    $scope.showCollection = function (index) {
-        $scope.indexofCollection = index
-    }
-    $scope.isShowCollection = function (index) {
-        return $scope.indexofCollection == index
-    }
 
     $scope.pickedCollection2 = function (col) {
         return $scope.pickedCollections.indexOf(col) != -1
@@ -168,6 +210,18 @@ appMusic.controller('CollectionController', function ($scope, $rootScope, $http,
             $location.search("kc", null)
         } else {
             $location.search("cd", null)
+        }
+    }
+
+    let listCollection = document.querySelectorAll('.collection__pick-list-item')
+    document.body.onclick = function (e) {
+        if (e.target.closest('.collection__pick-list-item') == null) {
+            listCollection.forEach(ele => {
+                ele.classList.remove('show')
+            })
+        }
+        if (e.target.closest('.collection__pick-item-show')) {
+            e.target.closest('.collection__pick-item-show').nextElementSibling.classList.add('show')
         }
     }
 })
@@ -216,55 +270,112 @@ appMusic.config(function ($routeProvider, $locationProvider) {
         })
         .when("/tuyen-tap", {
             templateUrl: "N_collection.html",
+            controller: "CollectionController"
         })
         .when("/top-100", {
             templateUrl: "N_top100.html",
+            controller: "Top100Controller"
         })
         .when("/my-playlist", {
             templateUrl: "T_myplaylist.html",
+            controller: "MyPlaylistController"
         })
         .when("/nguoi-dung", {
             templateUrl: "T_user.html",
+            controller: "UserController"
         })
-        .when("/da-thich", {
+        .when("/da-thich/bai-hat", {
             templateUrl: "T_liked.html",
+            controller: "SongLikedController"
         })
-        .when("/da-nghe", {
+        .when("/da-thich/playlist", {
+            templateUrl: "liked_playlist.html",
+            controller: "PlaylistLikedController"
+        })
+        .when("/da-thich/album", {
+            templateUrl: "liked_album.html",
+            controller: "AlbumLikedController"
+        })
+        .when("/da-nghe/bai-hat", {
             templateUrl: "T_listened.html",
-            controller: "ListenedController"
+            controller: "SongListenedController"
         })
         .when("/da-nghe/playlist", {
             templateUrl: "listened_playlist.html",
-            controller: "ListenedController"
+            controller: "PlaylistListenedController"
         })
         .when("/da-nghe/album", {
             templateUrl: "listened_album.html",
-            controller: "ListenedController"
+            controller: "AlbumListenedController"
         })
         .when("/bang-xep-hang", {
             templateUrl: "rank.html",
+            controller: "RankController"
         })
         .when("/chi-tiet/bai-hat", {
             templateUrl: "detail_song.html",
+            controller: "SongDetailsController"
         })
         .when("/chi-tiet/playlist", {
             templateUrl: "detail_playlist.html",
+            controller: "PlaylistDetailsController"
         })
         .when("/chi-tiet/album", {
             templateUrl: "detail_album.html",
+            controller: "AlbumDetailsController"
         })
         .when("/chi-tiet/nghe-si", {
             templateUrl: "detail_artist.html",
+            controller: "ArtistDetailsController"
         })
         .when("/nang-cap", {
             templateUrl: "upgrade.html",
+            controller: "UpgradeController"
         })
         .otherwise({
             redirect: '/'
         })
-    // $locationProvider.html5Mode(true)
-    // $locationProvider.hashPrefix('!')
 });
+
+appMusic.controller('PlayMusicController', function ($scope, $rootScope) {
+    $rootScope.songisPlayed = {}
+    let indexBackgroundImage = 0
+    let backgroundImage = document.querySelectorAll('.background img')
+    let mySetInterval
+    $scope.open = false
+    $scope.isFullScreen = function () {
+        $scope.open = !$scope.open
+        document.querySelector('.play-music').classList.toggle('show')
+        if ($scope.open) {
+            mySetInterval = setInterval(function () {
+                indexBackgroundImage++
+                if (indexBackgroundImage < 0) {
+                    indexBackgroundImage = 9
+                }
+                if (indexBackgroundImage > 9) {
+                    indexBackgroundImage = 0
+                }
+                console.log(indexBackgroundImage)
+                backgroundImage.forEach(element => {
+                    element.classList.remove('animation')
+                    element.classList.remove('active')
+                });
+                backgroundImage[indexBackgroundImage].classList.add('animation')
+                backgroundImage[indexBackgroundImage].classList.add('active')
+            }, 10000)
+            indexBackgroundImage = 0
+            backgroundImage[0].classList.add('animation')
+            backgroundImage[0].classList.add('active')
+        } else {
+            clearInterval(mySetInterval)
+            indexBackgroundImage = 0
+            backgroundImage.forEach(element => {
+                element.classList.remove('animation')
+                element.classList.remove('active')
+            });
+        }
+    }
+})
 
 appMusic.controller('SidebarController', function ($scope, $rootScope) {
     $rootScope.currentIndex = 1
@@ -473,7 +584,7 @@ appMusic.controller('SlideClickController', function ($scope) {
         let slide = options.selector.querySelector('.list-playlist__slide > .grid')
 
         let currentIdx = 0
-        let eleInViewOfThisSlide = 4
+        let eleInViewOfThisSlide = 6
         let countEleSlide = slide.children[0].childElementCount
         let jump = (countEleSlide % eleInViewOfThisSlide) / eleInViewOfThisSlide * 100
 
