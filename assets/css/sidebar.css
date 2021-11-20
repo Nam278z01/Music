@@ -47,11 +47,25 @@
     margin-right: 15px;
 }
 
+.signin-singup {
+    font-size: 1.3rem;
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.signin-singup span {
+    padding: 4px;
+    display: inline-block;
+    cursor: pointer;
+}
+
 .sidebar__userAset {
     height: 56px;
     background-color: var(--bg-color-blur);
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .sidebar__user {
@@ -93,7 +107,6 @@
 
 .sidebar__btn-setting {
     padding: 12px;
-    margin-left: 20px;
 }
 
 .sidebar__btn-setting i{

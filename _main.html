@@ -21,16 +21,34 @@
     <link rel="stylesheet" href="./assets/css/gridmusic.css">
     <link rel="stylesheet" href="./assets/css/song.css">
     <link rel="stylesheet" href="./assets/css/songdetail.css">
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/loadAmodal.css">
+    <link rel="stylesheet" href="./assets/css/playmusic.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="./assets/package/dirPagination.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/CustomerController/app.js"></script>
+    <script src="./assets/js/CustomerController/collection.controller.js"></script>
+    <script src="./assets/js/CustomerController/detail.controller.js"></script>
+    <script src="./assets/js/CustomerController/discovery.controller.js"></script>
+    <script src="./assets/js/CustomerController/home.controller.js"></script>
+    <script src="./assets/js/CustomerController/liked.controller.js"></script>
+    <script src="./assets/js/CustomerController/listened.controller.js"></script>
+    <script src="./assets/js/CustomerController/loginAsignup.controller.js"></script>
+    <script src="./assets/js/CustomerController/myplaylist.controller.js"></script>
+    <script src="./assets/js/CustomerController/playmusic.controller.js"></script>
+    <script src="./assets/js/CustomerController/search.controller.js"></script>
+    <script src="./assets/js/CustomerController/sidebar.controller.js"></script>
+    <script src="./assets/js/CustomerController/slide.controller.js"></script>
+    <script src="./assets/js/CustomerController/top100.controller.js"></script>
 </head>
 
 <body>
-    <div class="app">
+    <div class="app" ng-controller="LoginController" >
+        <div class="loading">
+            <img src="./assets/img/Default/loading-37.gif" alt="">
+        </div>
         <nav class="sidebar" ng-controller="SidebarController">
             <div class="sidebar__header">
                 <div class="sidebar__brand-name">
@@ -41,7 +59,7 @@
                 </a>
             </div>
             <div class="sidebar__userAset">
-                <a href="#!/nguoi-dung" class="sidebar__user" ng-click="changePage(-1)">
+                <a href="#!/nguoi-dung" class="sidebar__user" ng-click="changePage(-1)" ng-show="logged">
                     <div class="sidebar__user-avatar">
                         <img src="./assets/img/Default/1560232125002.jpg" alt="">
                     </div>
@@ -50,6 +68,9 @@
                         <span>VIP</span>
                     </div>
                 </a>
+                <div class="signin-singup">
+                    <span id="showlogin">Đăng nhập</span>|<span id="showsignup">Đăng ký</span>
+                </div>
                 <button class="btn sidebar__btn-setting">
                     <i class='bx bx-cog'></i>
                 </button>
@@ -131,22 +152,22 @@
                             <span>BXH MM</span>
                         </a>
                     </li>
-                    <li class="sidebar__navigation-library">THƯ VIỆN</li>
-                    <li class="sidebar__navigation-item">
+                    <li class="sidebar__navigation-library" ng-show="logged">THƯ VIỆN</li>
+                    <li class="sidebar__navigation-item" ng-show="logged">
                         <a href="#!/my-playlist" class="sidebar__navigation-link" ng-class="{active:isActive(5)}"
                             ng-click="changePage(5)">
                             <i class='bx bx-cloud'></i>
                             <span>My Playlist</span>
                         </a>
                     </li>
-                    <li class="sidebar__navigation-item">
+                    <li class="sidebar__navigation-item" ng-show="logged">
                         <a href="#!/da-thich/bai-hat" class="sidebar__navigation-link" ng-class="{active:isActive(6)}"
                             ng-click="changePage(6)">
                             <i class='bx bx-heart'></i>
                             <span>Đã thích</span>
                         </a>
                     </li>
-                    <li class="sidebar__navigation-item">
+                    <li class="sidebar__navigation-item" ng-show="logged">
                         <a href="#!/da-nghe/bai-hat" class="sidebar__navigation-link" ng-class="{active:isActive(7)}"
                             ng-click="changePage(7)">
                             <i class='bx bx-history'></i>
@@ -158,11 +179,11 @@
         </nav>
 
         <section class="home-main">
-            <div ng-view>
+            <ng-view>
 
-            </div>
+            </ng-view>
 
-            <div class="footer">
+            <div class="footer" style="margin-bottom: 100px">
                 <div class="link">
                     <div class="service">
                         <ul class="nav_service">
@@ -182,12 +203,12 @@
                     </div>
                 </div>
                 <div class="infor">
-                    <p>Website được xây dựng bởi 3 thành viên: An, Nam, Tuyết</p>
+                    <p>Website được xây dựng dựa trên nhaccuatui.com bởi 3 thành viên: An, Nam, Tuyết</p>
                 </div>
             </div>
         </section>
 
-        <section class="play-music" ng-controller="PlayMusicController">
+        <section class="play-music hidden" ng-controller="PlayMusicController">
             <div class="background">
                 <img src="./assets/img/Default/background10.jpg" alt="">
                 <img src="./assets/img/Default/background1.jpg" alt="">
@@ -249,7 +270,8 @@
                         <span class="controls_time--right">00.00</span>
                         <input id="progress" class="controls_time--range" value="0" type="range" step="1" min="0"
                             max="100">
-                        <audio autoplay id="audio" src="./assets/mp3/{{song.Song.SongPath}}" style="display: none;"></audio>
+                        <audio autoplay id="audio" src="./assets/mp3/{{song.Song.SongPath}}"
+                            style="display: none;"></audio>
                         <span class="controls_time--left">03.22</span>
                     </div>
                 </div>
@@ -271,6 +293,91 @@
                         <i class='bx bx-slider-alt'></i>
                     </button>
                 </div>
+            </div>
+        </section>
+
+        <section class="modal" id="modal-login-singup">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <!-- Register form -->
+                <form class="auth-form" id="registerForm">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đồng ý với My Music về
+                                <a href="#" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="#" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn-outline auth-form__controls-back">Quay lại</button>
+                            <button type="submit" class="btn btn--primary btn-outline btn-login">Đăng ký</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        Hoặc đăng nhập bằng:
+                        <button class="btn btn--circle auth-form__socials--facebook">
+                            <i class='bx bxl-facebook'></i>
+                        </button>
+                        <button class="btn btn--circle auth-form__socials--google">
+                            <img src="./assets/img/Default/gg.png" alt="">
+                        </button>
+                    </div>
+                </form>
+                <!-- Login form -->
+                <form class="auth-form" id="loginForm" name="LoginForm">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng ký</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" name="EmailLogin" placeholder="Email của bạn" ng-model="EmailLogin" ng-class="{'warning': warning}" ng-focus="warning=false" ng-blur="warning=LoginForm.EmailLogin.$error.email" required>
+                                <p class="input-warning" ng-show="warning">Email không hợp lệ!</p>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" required>
+                            </div>
+                            <p class="input-warning" ng-hide="isLoginSubmit" style="text-align: center; margin-top: 4px;">Tài khoản hoặc mật khẩu không chính xác!</p>
+                        </div>
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="#" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="#" class="auth-form__help-link">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn-outline auth-form__controls-back">Quay lại</button>
+                            <button type="submit" class="btn btn--primary btn-outline btn-login" ng-click="loginSubmit()">Đăng nhập</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        Hoặc đăng nhập bằng:
+                        <button class="btn btn--circle auth-form__socials--facebook">
+                            <i class='bx bxl-facebook'></i>
+                        </button>
+                        <button class="btn btn--circle auth-form__socials--google">
+                            <img src="./assets/img/Default/gg.png" alt="">
+                        </button>
+                    </div>
+                </form>
             </div>
         </section>
     </div>
